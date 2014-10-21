@@ -4,5 +4,3 @@ include/*
 make/*
 src/*
 project.cbp
-Makefile
-update.sh
