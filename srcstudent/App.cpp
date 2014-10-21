@@ -7,7 +7,7 @@
 
 IMPLEMENT_APP(App);
 
-const wxString StudentsNames = wxT("Jean-Noel de la Motte-Picquet & Charles-Henris Dupont");
+const wxString StudentsNames = wxT("Vincent Chataignier & Florent Clarret");
 
 bool App::OnInit()
 {
