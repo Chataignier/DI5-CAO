@@ -1,0 +1,7 @@
+<map id="Buffer" name="Buffer">
+<area shape="rect" id="node2" href="$classZBuffer.html" title="Classe implémentant un Z&#45;buffer. " alt="" coords="39,766,168,917"/>
+<area shape="rect" id="node3" href="$classArray.html" title="{Array\&lt; Array\&lt; double \&gt; \&gt;\n|+ buffer\l+ bufferReservedSize\l+ bufferSize\l+ data\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="4,369,203,666"/>
+<area shape="rect" id="node5" href="$classScanLineComputer.html" title="Cette classe a pour bu de stocker toutes les informations spécifiques au scan line. " alt="" coords="193,744,345,939"/>
+<area shape="rect" id="node4" href="$classArray.html" title="une classe tableau dynamique générique " alt="" coords="124,6,323,303"/>
+<area shape="rect" id="node6" href="$classArray.html" title="{Array\&lt; int \&gt;\n|+ buffer\l+ bufferReservedSize\l+ bufferSize\l+ data\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="228,369,427,666"/>
+</map>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TPAG" />
+		<Option makefile_is_custom="1" />
+		<Option compiler="gcc" />
+		<Option extended_obj_names="1" />
+		<Build>
+			<Target title="debug">
+				<Option output="debug/tp" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="debug" />
+				<Option object_output="debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command="$make -f $makefile debug/tp" />
+					<CompileFile command="" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile clean" />
+					<AskRebuildNeeded command="$make -q -f $makefile debug/tp" />
+					<SilentBuild command="$make -f $makefile debug/tp &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="release">
+				<Option output="release/tp" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="release" />
+				<Option object_output="release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command="$make release/tp" />
+					<CompileFile command="" />
+					<Clean command="$make clean" />
+					<DistClean command="make clean" />
+					<AskRebuildNeeded command="$make -q -f $makefile release/tp" />
+					<SilentBuild command="$make release/tp &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="include/App.h" />
+		<Unit filename="include/Array.h" />
+		<Unit filename="include/AssertException.h" />
+		<Unit filename="include/Buffer.h" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Color.h" />
+		<Unit filename="include/Config.h" />
+		<Unit filename="include/Coord2D.h" />
+		<Unit filename="include/Coord3D.h" />
+		<Unit filename="include/Drawable.h" />
+		<Unit filename="include/DrawableInCameraCoordinates.h" />
+		<Unit filename="include/Engine.h" />
+		<Unit filename="include/Exception.h" />
+		<Unit filename="include/Face.h" />
+		<Unit filename="include/FaceDepthAccessor.h" />
+		<Unit filename="include/FastMath.h" />
+		<Unit filename="include/FrameCounter.h" />
+		<Unit filename="include/IllegalArgumentException.h" />
+		<Unit filename="include/IndexOutOfBoundsException.h" />
+		<Unit filename="include/Light.h" />
+		<Unit filename="include/MainFrame.h" />
+		<Unit filename="include/Memory.h" />
+		<Unit filename="include/MemoryException.h" />
+		<Unit filename="include/Panel3D.h" />
+		<Unit filename="include/Piloter.h" />
+		<Unit filename="include/QuickSort.h" />
+		<Unit filename="include/Renderable.h" />
+		<Unit filename="include/Renderer.h" />
+		<Unit filename="include/Rotation.h" />
+		<Unit filename="include/ScanLineComputer.h" />
+		<Unit filename="include/ZBuffer.h" />
+		<Unit filename="include/wxid.h" />
+		<Unit filename="src/AssertException.cpp" />
+		<Unit filename="src/BufferBase.cpp" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/DataComprime.cpp" />
+		<Unit filename="src/DataDuck.cpp" />
+		<Unit filename="src/DataEtoile.cpp" />
+		<Unit filename="src/DataNoeud.cpp" />
+		<Unit filename="src/DataPolytechLogo.cpp" />
+		<Unit filename="src/DataSphere.cpp" />
+		<Unit filename="src/DataTeapot.cpp" />
+		<Unit filename="src/DataTete.cpp" />
+		<Unit filename="src/DataTore.cpp" />
+		<Unit filename="src/Drawable.cpp" />
+		<Unit filename="src/DrawableInCameraCoordinates.cpp" />
+		<Unit filename="src/Engine.cpp" />
+		<Unit filename="src/Exception.cpp" />
+		<Unit filename="src/FaceDepthAccessor.cpp" />
+		<Unit filename="src/FastMath.cpp" />
+		<Unit filename="src/FrameCounter.cpp" />
+		<Unit filename="src/IllegalArgumentException.cpp" />
+		<Unit filename="src/IndexOutOfBoundsException.cpp" />
+		<Unit filename="src/MainFrame.cpp" />
+		<Unit filename="src/Memory.cpp" />
+		<Unit filename="src/MemoryException.cpp" />
+		<Unit filename="src/Panel3D.cpp" />
+		<Unit filename="src/Piloter.cpp" />
+		<Unit filename="src/Renderable.cpp" />
+		<Unit filename="src/RendererBase.cpp" />
+		<Unit filename="src/ScanLineComputerBase.cpp" />
+		<Unit filename="src/ZBufferBase.cpp" />
+		<Unit filename="srcstudent/App.cpp" />
+		<Unit filename="srcstudent/Buffer.cpp" />
+		<Unit filename="srcstudent/Renderer.cpp" />
+		<Unit filename="srcstudent/ScanLineComputer.cpp" />
+		<Unit filename="srcstudent/ZBuffer.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

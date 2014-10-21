@@ -1,0 +1,6 @@
+<map id="Exception" name="Exception">
+<area shape="rect" id="node2" href="$classAssertException.html" title="Une exception levée lorsqu&#39;une assertion n&#39;est pas vérifiée. " alt="" coords="5,344,144,421"/>
+<area shape="rect" id="node3" href="$classIllegalArgumentException.html" title="Une excpetion levée lorsqu&#39;un argument illégal est transmis à une fonction. " alt="" coords="169,344,359,421"/>
+<area shape="rect" id="node4" href="$classIndexOutOfBoundsException.html" title="Une classe levée lorsqu&#39;un paramètre est hors de son domaine valide de valeur. " alt="" coords="384,307,593,458"/>
+<area shape="rect" id="node5" href="$classMemoryException.html" title="Une exception levée lorsque des problèmes d&#39;allocation mémoire surviennent. " alt="" coords="619,344,765,421"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="DrawableInCameraCoordinates" name="DrawableInCameraCoordinates">
+<area shape="rect" id="node2" href="$classArray.html" title="{Array\&lt; FaceDepthAccessor \&gt;\n|+ bufferReservedSize\l+ bufferSize\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="4,397,203,665"/>
+<area shape="rect" id="node3" href="$classFaceDepthAccessor.html" title="Classe permettant de récupérer la valeur de profondeur associée à une face. " alt="" coords="24,101,183,208"/>
+<area shape="rect" id="node4" href="$classArray.html" title="une classe tableau dynamique générique " alt="" coords="345,6,544,303"/>
+<area shape="rect" id="node5" href="$classArray.html" title="{Array\&lt; bool \&gt;\n|+ buffer\l+ bufferReservedSize\l+ bufferSize\l+ data\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="228,382,427,679"/>
+<area shape="rect" id="node6" href="$classArray.html" title="{Array\&lt; Coord3D \&gt;\n|+ bufferReservedSize\l+ bufferSize\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="676,397,875,665"/>
+<area shape="rect" id="node8" href="$classArray.html" title="{Array\&lt; double \&gt;\n|+ buffer\l+ bufferReservedSize\l+ bufferSize\l+ data\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="452,382,651,679"/>
+<area shape="rect" id="node7" href="$classCoord3D.html" title="Une classe stockant des coordonnées 3D d&#39;un point. " alt="" coords="723,13,828,296"/>
+</map>

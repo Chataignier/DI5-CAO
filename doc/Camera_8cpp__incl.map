@@ -1,0 +1,18 @@
+<map id="Camera.cpp" name="Camera.cpp">
+<area shape="rect" id="node2" href="$Camera_8h.html" title="Camera.h" alt="" coords="277,80,355,107"/>
+<area shape="rect" id="node5" href="$FastMath_8h.html" title="FastMath.h" alt="" coords="55,379,143,405"/>
+<area shape="rect" id="node3" href="$Coord3D_8h.html" title="Coord3D.h" alt="" coords="181,229,263,256"/>
+<area shape="rect" id="node13" href="$Config_8h.html" title="Config.h" alt="" coords="762,528,832,555"/>
+<area shape="rect" id="node19" href="$Rotation_8h.html" title="Rotation.h" alt="" coords="375,229,456,256"/>
+<area shape="rect" id="node20" href="$Drawable_8h.html" title="Drawable.h" alt="" coords="273,155,359,181"/>
+<area shape="rect" id="node4" href="$Coord2D_8h.html" title="Coord2D.h" alt="" coords="97,304,179,331"/>
+<area shape="rect" id="node8" href="$Memory_8h.html" title="Memory.h" alt="" coords="340,304,419,331"/>
+<area shape="rect" id="node9" href="$MemoryException_8h.html" title="MemoryException.h" alt="" coords="335,379,473,405"/>
+<area shape="rect" id="node10" href="$Exception_8h.html" title="Exception.h" alt="" coords="516,453,607,480"/>
+<area shape="rect" id="node21" href="$Array_8h.html" title="Array.h" alt="" coords="503,229,567,256"/>
+<area shape="rect" id="node25" href="$Color_8h.html" title="Color.h" alt="" coords="43,229,105,256"/>
+<area shape="rect" id="node26" href="$Face_8h.html" title="Face.h" alt="" coords="289,229,351,256"/>
+<area shape="rect" id="node22" href="$AssertException_8h.html" title="AssertException.h" alt="" coords="549,379,677,405"/>
+<area shape="rect" id="node23" href="$IndexOutOfBoundsException_8h.html" title="IndexOutOfBoundsException.h" alt="" coords="703,379,905,405"/>
+<area shape="rect" id="node24" href="$IllegalArgumentException_8h.html" title="IllegalArgumentException.h" alt="" coords="444,304,625,331"/>
+</map>

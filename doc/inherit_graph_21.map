@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classException.html" title="La classe parente de toutes les exceptions gérées. " alt="" coords="5,81,85,108"/>
+<area shape="rect" id="node2" href="$classAssertException.html" title="Une exception levée lorsqu&#39;une assertion n&#39;est pas vérifiée. " alt="" coords="170,5,289,32"/>
+<area shape="rect" id="node3" href="$classIllegalArgumentException.html" title="Une excpetion levée lorsqu&#39;un argument illégal est transmis à une fonction. " alt="" coords="144,56,315,83"/>
+<area shape="rect" id="node4" href="$classIndexOutOfBoundsException.html" title="Une classe levée lorsqu&#39;un paramètre est hors de son domaine valide de valeur. " alt="" coords="134,107,325,133"/>
+<area shape="rect" id="node5" href="$classMemoryException.html" title="Une exception levée lorsque des problèmes d&#39;allocation mémoire surviennent. " alt="" coords="166,157,293,184"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="Buffer.h" name="Buffer.h">
+<area shape="rect" id="node2" href="$Config_8h.html" title="Config.h" alt="" coords="206,453,276,480"/>
+<area shape="rect" id="node8" href="$Color_8h.html" title="Color.h" alt="" coords="881,155,943,181"/>
+<area shape="rect" id="node11" href="$Coord2D_8h.html" title="Coord2D.h" alt="" coords="820,229,901,256"/>
+<area shape="rect" id="node12" href="$ScanLineComputer_8h.html" title="ScanLineComputer.h" alt="" coords="519,80,661,107"/>
+<area shape="rect" id="node22" href="$ZBuffer_8h.html" title="ZBuffer.h" alt="" coords="687,80,763,107"/>
+<area shape="rect" id="node24" href="$Light_8h.html" title="Light.h" alt="" coords="959,80,1020,107"/>
+<area shape="rect" id="node9" href="$FastMath_8h.html" title="FastMath.h" alt="" coords="949,304,1037,331"/>
+<area shape="rect" id="node13" href="$Array_8h.html" title="Array.h" alt="" coords="557,155,621,181"/>
+<area shape="rect" id="node14" href="$AssertException_8h.html" title="AssertException.h" alt="" coords="582,304,711,331"/>
+<area shape="rect" id="node18" href="$IndexOutOfBoundsException_8h.html" title="IndexOutOfBoundsException.h" alt="" coords="304,304,507,331"/>
+<area shape="rect" id="node19" href="$IllegalArgumentException_8h.html" title="IllegalArgumentException.h" alt="" coords="451,229,632,256"/>
+<area shape="rect" id="node20" href="$Memory_8h.html" title="Memory.h" alt="" coords="716,229,795,256"/>
+<area shape="rect" id="node15" href="$Exception_8h.html" title="Exception.h" alt="" coords="549,379,640,405"/>
+<area shape="rect" id="node21" href="$MemoryException_8h.html" title="MemoryException.h" alt="" coords="736,304,875,331"/>
+<area shape="rect" id="node25" href="$Coord3D_8h.html" title="Coord3D.h" alt="" coords="968,155,1049,181"/>
+</map>

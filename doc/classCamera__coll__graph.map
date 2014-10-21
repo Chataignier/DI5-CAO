@@ -1,0 +1,4 @@
+<map id="Camera" name="Camera">
+<area shape="rect" id="node2" href="$classRotation.html" title="Classe stockant une rotation. " alt="" coords="5,71,104,222"/>
+<area shape="rect" id="node3" href="$classCoord3D.html" title="Une classe stockant des coordonnées 3D d&#39;un point. " alt="" coords="150,5,255,288"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ScanLineComputer" name="ScanLineComputer">
+<area shape="rect" id="node2" href="$classArray.html" title="{Array\&lt; int \&gt;\n|+ buffer\l+ bufferReservedSize\l+ bufferSize\l+ data\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="4,369,203,666"/>
+<area shape="rect" id="node3" href="$classArray.html" title="une classe tableau dynamique générique " alt="" coords="133,6,332,303"/>
+<area shape="rect" id="node4" href="$classArray.html" title="{Array\&lt; Array\&lt; double \&gt; \&gt;\n|+ buffer\l+ bufferReservedSize\l+ bufferSize\l+ data\l+ defaultMemoryStrategy\l+ size\l|+ Array()\l+ Array()\l+ ~Array()\l+ Clear()\l+ Copy()\l+ Erase()\l+ Fill()\l+ GetDefaultMemoryStrategy()\l+ Insert()\l+ operator=()\land 7 more...\l}" alt="" coords="228,369,427,666"/>
+</map>

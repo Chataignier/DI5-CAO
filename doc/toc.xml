@@ -1,0 +1,1144 @@
+<toc label="Travaux pratiques de Algorithmique Graphique" topic="index.html">
+  <topic label="Modules" href="modules.html">
+    <topic label="Les données de l&apos;objet à dessiner" href="group__data.html">
+      <topic label="Drawable" href="classDrawable.html">
+        <topic label="CenterObjectToOrigin" href="classDrawable.html#a0ebb9e34547ac4eac139303e86f2161d"/>
+        <topic label="LoadFromO3DFile" href="classDrawable.html#ab98b10adab688da4bb4a3b1ca5a23e5c"/>
+        <topic label="LoadPredefinedComprime" href="classDrawable.html#adf64780b78e92ec742db53166058bf61"/>
+        <topic label="LoadPredefinedDuck" href="classDrawable.html#af444886efc68d2d0781dd23890bc6dca"/>
+        <topic label="LoadPredefinedEtoile" href="classDrawable.html#ae628b7d534d1a73a014b47dc551eb9d0"/>
+        <topic label="LoadPredefinedHead" href="classDrawable.html#aaa3904e70b8698dd5c0bf28d59b806a5"/>
+        <topic label="LoadPredefinedNoeud" href="classDrawable.html#aedfb8e2e4d917ba330b15a3399419006"/>
+        <topic label="LoadPredefinedPolytechLogo" href="classDrawable.html#a05f0514f5404482658d3cf0a5b954c35"/>
+        <topic label="LoadPredefinedSphere" href="classDrawable.html#acae6b6314893cebd63eae7a60884991b"/>
+        <topic label="LoadPredefinedTeapot" href="classDrawable.html#a61575c2f4a2545dc91c679da45cd380f"/>
+        <topic label="LoadPredefinedTore" href="classDrawable.html#aeefbc5e6da94728d7934c457010c43f8"/>
+        <topic label="SaveAsCode" href="classDrawable.html#acd8353ef7cc609cc8e1208527d2ecf2b"/>
+        <topic label="colorOnFace" href="classDrawable.html#a67d1b29e7326f5e8d3e7350fc992a7f2"/>
+        <topic label="faceColors" href="classDrawable.html#a763aadeadb1c8e63bb51007600d040b2"/>
+        <topic label="faces" href="classDrawable.html#ab3a0b6f6ff93045c74de3a65b7471a4a"/>
+        <topic label="pointColors" href="classDrawable.html#af43fab0187faca10c5cc3b69c905fe11"/>
+        <topic label="points" href="classDrawable.html#ad96a5dca155d9ce8edd28b123a5ea9a9"/>
+        <topic label="radius" href="classDrawable.html#a3f67c53b80389c5f53961936edba04c9"/>
+      </topic>
+      <topic label="DrawableInCameraCoordinates" href="classDrawableInCameraCoordinates.html">
+        <topic label="Compute" href="classDrawableInCameraCoordinates.html#a8b57b7c67075cb1d3fedea834ce45f84"/>
+        <topic label="ComputeInCameraCoordinates" href="classDrawableInCameraCoordinates.html#a2d0f2ffef076de33b8ff848ff635019d"/>
+        <topic label="ComputeVisibilityOfFaces" href="classDrawableInCameraCoordinates.html#af77104a1e77013c671e82597cda16b56"/>
+        <topic label="IsFaceVisible" href="classDrawableInCameraCoordinates.html#a9f8274d98348438b30bd29242e8c33db"/>
+        <topic label="SortVisibleFaces" href="classDrawableInCameraCoordinates.html#a3a492626db95de76cb975312265e0544"/>
+        <topic label="faceDepths" href="classDrawableInCameraCoordinates.html#ae14cf818bd457b160dd3113676a8dc74"/>
+        <topic label="faceNormals" href="classDrawableInCameraCoordinates.html#a595d422dc98448f091af576a1e19c65a"/>
+        <topic label="faceVisibles" href="classDrawableInCameraCoordinates.html#ada0a6abe5654f018c7b7424a391479a9"/>
+        <topic label="pointNormals" href="classDrawableInCameraCoordinates.html#ac14ca86650a63816757747bb1e9e741b"/>
+        <topic label="points" href="classDrawableInCameraCoordinates.html#ad96a5dca155d9ce8edd28b123a5ea9a9"/>
+        <topic label="pointsNormalized" href="classDrawableInCameraCoordinates.html#abb5bd08691ddc5728cb4e55a99d4c9c8"/>
+        <topic label="sortedVisibleFaces" href="classDrawableInCameraCoordinates.html#aa2eee77edf04ec470f4c950939460677"/>
+      </topic>
+      <topic label="Face" href="classFace.html">
+        <topic label="Face" href="classFace.html#a54faf8f0db9f6027cf884102ff4252d1"/>
+        <topic label="Face" href="classFace.html#a1342c82712dd74036d8eba5c974e1532"/>
+        <topic label="index1" href="classFace.html#ad1b0b6e5a5dc2e8040053a737f33f410"/>
+        <topic label="index2" href="classFace.html#aeda6d5f39f755fd62ca156c9dfccea5e"/>
+        <topic label="index3" href="classFace.html#afdabd4951904cc2c053249efc5d6808f"/>
+      </topic>
+      <topic label="Renderable" href="classRenderable.html">
+        <topic label="ComputeRenderable" href="classRenderable.html#a8879f0394c3d191606a6ff93a07a6cad"/>
+        <topic label="points2D" href="classRenderable.html#a47b436bfe726a23ddba74b100d9e0b96"/>
+      </topic>
+    </topic>
+    <topic label="Les exceptions" href="group__exception.html">
+      <topic label="AssertException" href="classAssertException.html">
+        <topic label="AssertException" href="classAssertException.html#aea270bf70d285dba7bd1cac0bff565a9"/>
+        <topic label="activateDebugHelper" href="classAssertException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classAssertException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classAssertException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classAssertException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classAssertException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classAssertException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classAssertException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classAssertException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classAssertException.html#a028d1fc07980511ee509856f152aed84"/>
+      </topic>
+      <topic label="Exception" href="classException.html">
+        <topic label="Exception" href="classException.html#abfbc23b99b2e78b609d50ac688611236"/>
+        <topic label="Exception" href="classException.html#a0f608f07130c27a40b20f425ef8c2fcd"/>
+        <topic label="activateDebugHelper" href="classException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classException.html#a028d1fc07980511ee509856f152aed84"/>
+        <topic label="file" href="classException.html#a1681513c5626e6224da4405a8c6468b7"/>
+        <topic label="line" href="classException.html#a41ebd28ef1d7c6ade45642cb6acc1039"/>
+        <topic label="msg" href="classException.html#a5647290bb5caf4f9dd1680b46cb931fa"/>
+      </topic>
+      <topic label="IllegalArgumentException" href="classIllegalArgumentException.html">
+        <topic label="IllegalArgumentException" href="classIllegalArgumentException.html#a6a3b72d3eefec8a32728400a7e4c037e"/>
+        <topic label="activateDebugHelper" href="classIllegalArgumentException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classIllegalArgumentException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classIllegalArgumentException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classIllegalArgumentException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classIllegalArgumentException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classIllegalArgumentException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classIllegalArgumentException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classIllegalArgumentException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classIllegalArgumentException.html#a028d1fc07980511ee509856f152aed84"/>
+      </topic>
+      <topic label="IndexOutOfBoundsException" href="classIndexOutOfBoundsException.html">
+        <topic label="IndexOutOfBoundsException" href="classIndexOutOfBoundsException.html#a79efbcba7087fc83f16b83ad00f9ece3"/>
+        <topic label="activateDebugHelper" href="classIndexOutOfBoundsException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classIndexOutOfBoundsException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classIndexOutOfBoundsException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getIndex" href="classIndexOutOfBoundsException.html#a5775df451a32aa32fab7fac48a1c1e5c"/>
+        <topic label="getLine" href="classIndexOutOfBoundsException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMax" href="classIndexOutOfBoundsException.html#acf55f26c252c2dcf31065171563a2dbc"/>
+        <topic label="getMessage" href="classIndexOutOfBoundsException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="getMin" href="classIndexOutOfBoundsException.html#a5ace44d3c950b86ba9307797ab019e14"/>
+        <topic label="raiseSIGTRAP" href="classIndexOutOfBoundsException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classIndexOutOfBoundsException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classIndexOutOfBoundsException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classIndexOutOfBoundsException.html#a028d1fc07980511ee509856f152aed84"/>
+        <topic label="index" href="classIndexOutOfBoundsException.html#a750b5d744c39a06bfb13e6eb010e35d0"/>
+        <topic label="max" href="classIndexOutOfBoundsException.html#ae1e1dde676c120fa6d10f3bb2c14059e"/>
+        <topic label="min" href="classIndexOutOfBoundsException.html#a3e202b201e6255d975cd6d3aff1f5a4d"/>
+      </topic>
+      <topic label="MemoryException" href="classMemoryException.html">
+        <topic label="MemoryException" href="classMemoryException.html#a9a870dc0cee550757b82dc72b8f184a2"/>
+        <topic label="activateDebugHelper" href="classMemoryException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classMemoryException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classMemoryException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classMemoryException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classMemoryException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classMemoryException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classMemoryException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classMemoryException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classMemoryException.html#a028d1fc07980511ee509856f152aed84"/>
+      </topic>
+    </topic>
+    <topic label="Les objets pour le dessin" href="group__dessin.html">
+      <topic label="La gestion de la lumière : le modèle d&apos;éclairage." href="group__light.html">
+        <topic label="AmbientLight" href="classAmbientLight.html">
+          <topic label="AmbientLight" href="classAmbientLight.html#abbbca3684a9fad260557db4188c1a967"/>
+          <topic label="ambientColor" href="classAmbientLight.html#ad6ff3fc5b682a297910cd903c13a5f91"/>
+        </topic>
+        <topic label="PointLight" href="classPointLight.html">
+          <topic label="PointLight" href="classPointLight.html#aeccd179febfc67fc7d0e20badbdd60e2"/>
+          <topic label="GetColor" href="classPointLight.html#acf011e0638c13efa2afdd31c3204d3fa"/>
+          <topic label="diffuseColor" href="classPointLight.html#a94ef1f16b7f48b48cbb606231e527ba4"/>
+          <topic label="position" href="classPointLight.html#a13b25ecba8dc44e0d70a849db0a826ec"/>
+        </topic>
+        <topic label="DrawGouraud" href="group__light.html#gac36d02af4bc6d6048570075dda51d898"/>
+        <topic label="DrawLambert" href="group__light.html#ga3753c23820a8932be590ac880a4bf494"/>
+        <topic label="DrawPhong" href="group__light.html#gace43eb20003a5db612a0dffebff9773e"/>
+      </topic>
+      <topic label="Buffer" href="classBuffer.html">
+        <topic label="Buffer" href="classBuffer.html#aae55e8dd301a3b9e3149f891dc4242e9"/>
+        <topic label="Buffer" href="classBuffer.html#a47587d18a394fb4b9508c61e3d5f0260"/>
+        <topic label="ClearBuffer" href="classBuffer.html#af28fe6832f4dd3f13033e5c666525f07"/>
+        <topic label="DrawFilledTriangle" href="classBuffer.html#a0e48f4548e5487d71008daa6764ae146"/>
+        <topic label="DrawLine" href="classBuffer.html#afb3a3767e3937452f126b5b2c119bfd5"/>
+        <topic label="DrawPhongTriangle" href="classBuffer.html#a728e1ca86b5948e304f9f9882ab1edd2"/>
+        <topic label="GetImage" href="classBuffer.html#a4ef38e378b6e4ab62aaf628026fb3fdd"/>
+        <topic label="operator=" href="classBuffer.html#a8f787b18579b21350450c2b69e839c13"/>
+        <topic label="SaveToFile" href="classBuffer.html#a2de87ba20a1b60cab627c3eba6330173"/>
+        <topic label="SetPoint" href="classBuffer.html#add98453158d1749d90e7ace68cf0f697"/>
+        <topic label="SetSize" href="classBuffer.html#ab538ca4937f762a51996a8ded3c0ff83"/>
+        <topic label="data" href="classBuffer.html#a4f41f7a22964165cd590dfc90d7b8051"/>
+        <topic label="height" href="classBuffer.html#ad12fc34ce789bce6c8a05d8a17138534"/>
+        <topic label="scanLineComputer" href="classBuffer.html#a818a3f6fc253bf8cae26e14f8371a5ee"/>
+        <topic label="width" href="classBuffer.html#a2474a5474cbff19523a51eb1de01cda4"/>
+        <topic label="zbuffer" href="classBuffer.html#a285fc85e6628a24c750e001e3a28d48f"/>
+      </topic>
+      <topic label="Camera" href="classCamera.html">
+        <topic label="Set" href="classCamera.html#a35b8aabc0859f61b2742e2121b533d1a"/>
+        <topic label="SetFromDrawable" href="classCamera.html#a793d3824dcf7a6078366f39f2823a329"/>
+        <topic label="aspectRatio" href="classCamera.html#a09c1e9032a77407b39a3bd33ee5c4721"/>
+        <topic label="farplan" href="classCamera.html#a7506c73891587947d5324a96dcb4dac6"/>
+        <topic label="nearplan" href="classCamera.html#aff80952f01ee57ce96137b72d0f1106e"/>
+        <topic label="orientation" href="classCamera.html#ac68382ed2484372f1ab29f6e1dc003c7"/>
+        <topic label="orientationInWorld" href="classCamera.html#a6a5163cf05cb41ac895f43891ad52748"/>
+        <topic label="position" href="classCamera.html#a13b25ecba8dc44e0d70a849db0a826ec"/>
+        <topic label="positionInWorld" href="classCamera.html#abbafcac7b38e3dfa845a9001e746916f"/>
+        <topic label="upwardAngle" href="classCamera.html#af430e9f75253dffce669a2ce4b97cca3"/>
+      </topic>
+      <topic label="Color" href="classColor.html">
+        <topic label="Color" href="classColor.html#a1589b83974b42a2f3315624f14c3c92c"/>
+        <topic label="Color" href="classColor.html#a5444d4d51853bdde2b31837a41291612"/>
+        <topic label="operator*" href="classColor.html#afd4a654f141bda2aed5ea397803884e6"/>
+        <topic label="operator*" href="classColor.html#adc6f0cd417e3d21899670d98fd4247de"/>
+        <topic label="operator+" href="classColor.html#af96920cd9c5b839e9b532eac8b0aa50a"/>
+        <topic label="operator==" href="classColor.html#af850bc357d624acc4026ff6685d1ddca"/>
+        <topic label="blue" href="classColor.html#a53125a3aec56167e405e8e5296862ef8"/>
+        <topic label="green" href="classColor.html#a244bc64dc81180dd04a6c11311407256"/>
+        <topic label="red" href="classColor.html#a0122321b07bffb16f3a5cdd27922548c"/>
+      </topic>
+      <topic label="Coord2D" href="classCoord2D.html">
+        <topic label="Coord2D" href="classCoord2D.html#a79c82f75da1b4a5db3ec2874439d6de4"/>
+        <topic label="Coord2D" href="classCoord2D.html#aa5c1f6551cb2b9f5a440b21ce89c7fac"/>
+        <topic label="Distance" href="classCoord2D.html#a54b003ad3378510515b8fb927bd55489"/>
+        <topic label="depth" href="classCoord2D.html#a6153a438c3d8d1be934e19e97e58c60c"/>
+        <topic label="x" href="classCoord2D.html#a6150e0515f7202e2fb518f7206ed97dc"/>
+        <topic label="y" href="classCoord2D.html#a0a2f84ed7838f07779ae24c5a9086d33"/>
+      </topic>
+      <topic label="Coord3D" href="classCoord3D.html">
+        <topic label="Coord3D" href="classCoord3D.html#acd18a8cb420afa82c09098d26fca7ea2"/>
+        <topic label="Coord3D" href="classCoord3D.html#a2a68947c5008ced4b8b9033f2f0e01b9"/>
+        <topic label="display" href="classCoord3D.html#ab51ee85f955451bb6319d0ee6af494fd"/>
+        <topic label="Norm" href="classCoord3D.html#a8ee7eecfcac25d9c4a6693ba1a8da90c"/>
+        <topic label="Normalize" href="classCoord3D.html#af279e0f0ff720ee54d6733674dfda50a"/>
+        <topic label="operator*" href="classCoord3D.html#a8bb9c5f4fed6dc59e7b8fec24297402f"/>
+        <topic label="operator*" href="classCoord3D.html#a34607d17e562bd159d31f32bd0807b02"/>
+        <topic label="operator*=" href="classCoord3D.html#af8cc0e7abd040ca117b4e9b6d6609adc"/>
+        <topic label="operator+" href="classCoord3D.html#accf2e4423dcbc6dfc29aff77d26bc7be"/>
+        <topic label="operator+=" href="classCoord3D.html#a2d77671b6e95f7019a5e8bfae09060ad"/>
+        <topic label="operator-" href="classCoord3D.html#a3541dda3bab2de25bf33bce049d23238"/>
+        <topic label="operator-" href="classCoord3D.html#ad4724b1a19a3d55a37e0bce504102313"/>
+        <topic label="operator^" href="classCoord3D.html#aef29fdd074cfdaad800a864a7fff9eae"/>
+        <topic label="x" href="classCoord3D.html#af88b946fb90d5f08b5fb740c70e98c10"/>
+        <topic label="y" href="classCoord3D.html#ab927965981178aa1fba979a37168db2a"/>
+        <topic label="z" href="classCoord3D.html#ab3e6ed577a7c669c19de1f9c1b46c872"/>
+      </topic>
+      <topic label="Engine" href="classEngine.html">
+        <topic label="Engine" href="classEngine.html#a9fda9f3ec029922558d808f9fc3130b5"/>
+        <topic label="Engine" href="classEngine.html#a916e4a9cdcdb4e2ee4d31c15330f36f4"/>
+        <topic label="~Engine" href="classEngine.html#a45936cce93ebf1bfdfd7ba305e03e864"/>
+        <topic label="addRenderer" href="classEngine.html#aa284add1070d94badb07df4d769577e7"/>
+        <topic label="operator=" href="classEngine.html#a95d968a881847d03ca559cc2df92b038"/>
+        <topic label="ReDraw" href="classEngine.html#aff462764ace22490b28680812463b811"/>
+        <topic label="Refresh" href="classEngine.html#ac3c6292a931287d34f6e353524a6a3d0"/>
+        <topic label="SetNeedUpdates" href="classEngine.html#a87481bda0656dab762ff8c5814300a82"/>
+        <topic label="camera" href="classEngine.html#a2008f4ab70b5e4104c2ca43932536ddf"/>
+        <topic label="drawable" href="classEngine.html#a26009c169bd5e8eb01d6c879d4b808b0"/>
+        <topic label="effectiveDrawable" href="classEngine.html#aa935a8b2ac8cfc8c0dc7cee3b0c3c169"/>
+        <topic label="needUpdates" href="classEngine.html#a3053004071f01a80399aead65cadc7a9"/>
+        <topic label="piloter" href="classEngine.html#aa16fe96804f02d05e60866118164d07a"/>
+        <topic label="renderers" href="classEngine.html#a9fb90c24f8512809277f5d94cde78aac"/>
+        <topic label="rot" href="classEngine.html#a7bff61835e27249cd022e4f37a236c8a"/>
+      </topic>
+      <topic label="Renderer" href="classRenderer.html">
+        <topic label="EMode" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787e">
+          <topic label="Filaire" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787eab33ffe255907db4e53fd6d99798340a7"/>
+          <topic label="FilaireCache" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea98df412af1a7f33b5c349b35eebc7a2d"/>
+          <topic label="FacePleine" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea393a50b5533e3a09da974655fd443d85"/>
+          <topic label="Lambert" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea14555e3c128b33258a3715ceb70e404a"/>
+          <topic label="Gouraud" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea99f881823fa5adb7828dcded3b823cb3"/>
+          <topic label="Phong" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787eafddebb2d49591c42cb6890f0afc9ec9b"/>
+          <topic label="FacePleineZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea7c1e0bd0377d15fcae549e1e2fbec6b0"/>
+          <topic label="LambertZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea5b99b567830c285d58c732cebf913ea6"/>
+          <topic label="GouraudZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea1f0196ee53d70b331c9bd2196601a285"/>
+          <topic label="PhongZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787eac201cd814db473094de29ef9f697f8c2"/>
+        </topic>
+        <topic label="Renderer" href="classRenderer.html#a08ebb7aa384467938296f09974a9f89d"/>
+        <topic label="~Renderer" href="classRenderer.html#afa18f5f1998b410a88017638a164cd89"/>
+        <topic label="Draw" href="classRenderer.html#a3d5cf0d8d37b6b17224867eb397c9a16"/>
+        <topic label="DrawBufferOnDC" href="classRenderer.html#a405d91da4bec5d75225087c021d2fe5f"/>
+        <topic label="DrawFacePleine" href="classRenderer.html#a3d064266767019ddfea69099c581bd55"/>
+        <topic label="DrawFilaire" href="classRenderer.html#a2b1e7810d3dadc2e2ac426f229755977"/>
+        <topic label="DrawFilaireCache" href="classRenderer.html#a19a1f7177463b8cc71abfe2ab6914729"/>
+        <topic label="DrawGouraud" href="group__light.html#gac36d02af4bc6d6048570075dda51d898"/>
+        <topic label="DrawLambert" href="group__light.html#ga3753c23820a8932be590ac880a4bf494"/>
+        <topic label="DrawPhong" href="group__light.html#gace43eb20003a5db612a0dffebff9773e"/>
+        <topic label="ReDraw" href="classRenderer.html#aff462764ace22490b28680812463b811"/>
+        <topic label="SetSize" href="classRenderer.html#a1b1df10b3400ab30e6ca05e616bcaf7d"/>
+        <topic label="ambientLight" href="classRenderer.html#a1fc084947ae7335283473aa3cb078786"/>
+        <topic label="buffer" href="classRenderer.html#a7d02dfdf8c80202d1f4d9217b53a20dd"/>
+        <topic label="buffers" href="classRenderer.html#add0e3689906ac76e98e1c7c0c7d1b218"/>
+        <topic label="current" href="classRenderer.html#a136992b1bb344dd5565b75a793154aa6"/>
+        <topic label="currentBuffer" href="classRenderer.html#a0c04e2241cc530e4cef4c4b0be213d4e"/>
+        <topic label="drawable" href="classRenderer.html#a89eb9efc493449dbc646bccc8e0cc828"/>
+        <topic label="effectiveDrawable" href="classRenderer.html#a7c8afc11512f8fa2ab673d7ffbd22e12"/>
+        <topic label="engine" href="classRenderer.html#a04ee0d142e98779501ddb0ea5f687ac7"/>
+        <topic label="height" href="classRenderer.html#ad12fc34ce789bce6c8a05d8a17138534"/>
+        <topic label="lastBufferAvailiable" href="classRenderer.html#ac4c7fc94e73e96c39a187766cb6ad141"/>
+        <topic label="mode" href="classRenderer.html#a8990f43132a01fd08e79a831b713f9d8"/>
+        <topic label="owner" href="classRenderer.html#a6a917eb833c5ec5f5773e6bf212ed853"/>
+        <topic label="pointLight" href="classRenderer.html#ab77982c6290c3178e472207d92690ce0"/>
+        <topic label="renderable" href="classRenderer.html#aa47d5b3ceb5da1ee836f78e1bb16e836"/>
+        <topic label="size" href="classRenderer.html#af74c9b4fbc83e661eb751e3564b997ab"/>
+        <topic label="width" href="classRenderer.html#a2474a5474cbff19523a51eb1de01cda4"/>
+      </topic>
+      <topic label="Rotation" href="classRotation.html">
+        <topic label="Rotation" href="classRotation.html#aac8a569afc15308dac89f775076a4d35"/>
+        <topic label="Rotation" href="classRotation.html#ac451476e796eee868f2e9a3846494c1a"/>
+        <topic label="display" href="classRotation.html#ab51ee85f955451bb6319d0ee6af494fd"/>
+        <topic label="operator*" href="classRotation.html#ac328394f01df1a67ac658c8ec9976ae5"/>
+        <topic label="operator*" href="classRotation.html#a8363e9cc0a7610c40e3ff2ff2d22800e"/>
+        <topic label="transpose" href="classRotation.html#a5fcc3d64297cee0ffe3d88499df49ba3"/>
+        <topic label="coef" href="classRotation.html#a2d59bbeda1a3c0590056060563b0da74"/>
+      </topic>
+      <topic label="ScanLineComputer" href="classScanLineComputer.html">
+        <topic label="ScanLineComputer" href="classScanLineComputer.html#acd6bee771804164a8799841148c7d6b3"/>
+        <topic label="AddEdge" href="classScanLineComputer.html#af9276f427f49ddb4a84c24b3c194a3d8"/>
+        <topic label="AddPoint" href="classScanLineComputer.html#afaf049ade09a7f2f02e31e54b8c51415"/>
+        <topic label="Compute" href="classScanLineComputer.html#adb7aedb25acde894453707b5f706dbf8"/>
+        <topic label="Init" href="classScanLineComputer.html#a1e3b6d38df0786ccf7f938d60e386aae"/>
+        <topic label="SetSize" href="classScanLineComputer.html#ab538ca4937f762a51996a8ded3c0ff83"/>
+        <topic label="height" href="classScanLineComputer.html#ad12fc34ce789bce6c8a05d8a17138534"/>
+        <topic label="left" href="classScanLineComputer.html#a56fb314e98f6e016cd1c35cae3987ecc"/>
+        <topic label="leftweight" href="classScanLineComputer.html#acbcd1a236d96fed310bde82658877e9e"/>
+        <topic label="right" href="classScanLineComputer.html#ad1d88cfd9fc21300c267bc523e11b966"/>
+        <topic label="rightweight" href="classScanLineComputer.html#ac76023f90054f2a01cc885a79662b04e"/>
+        <topic label="width" href="classScanLineComputer.html#a2474a5474cbff19523a51eb1de01cda4"/>
+        <topic label="ymax" href="classScanLineComputer.html#a740732a581a525ffdac6d4124d517d0e"/>
+        <topic label="ymin" href="classScanLineComputer.html#a8f91ffd86aa304f2ca807ff84fa2fe87"/>
+      </topic>
+      <topic label="ZBuffer" href="classZBuffer.html">
+        <topic label="ZBuffer" href="classZBuffer.html#ad9f3c0c21913cc15241184183af1d443"/>
+        <topic label="Disable" href="classZBuffer.html#a0b0a8402327309e2554c218967e472fe"/>
+        <topic label="Enable" href="classZBuffer.html#ab54a4752efd8105eb26e795c150a0e4c"/>
+        <topic label="Init" href="classZBuffer.html#a1e3b6d38df0786ccf7f938d60e386aae"/>
+        <topic label="ReplaceCurrent" href="classZBuffer.html#a5a77d13fa7f52827534f986a25c3d0bd"/>
+        <topic label="SetSize" href="classZBuffer.html#ab538ca4937f762a51996a8ded3c0ff83"/>
+        <topic label="depths" href="classZBuffer.html#a205583a88a7fd538a7a9420563ae3e68"/>
+        <topic label="enabled" href="classZBuffer.html#a8740ba80e30dd75e71d09fa1dcf04f3d"/>
+      </topic>
+    </topic>
+    <topic label="Les objets wxWidgets" href="group__widgets.html">
+      <topic label="App" href="classApp.html">
+        <topic label="OnInit" href="classApp.html#aa632f0b3197adeb7777ee5d14a2ac639"/>
+      </topic>
+      <topic label="FrameCounter" href="classFrameCounter.html">
+        <topic label="DecFrameCount" href="classFrameCounter.html#a62654cbab3fb809b0bb96ac85d7f750f"/>
+        <topic label="IncFrameCount" href="classFrameCounter.html#a6da4a7c2c604e2d7971fc35c67547cf5"/>
+        <topic label="frameCount" href="classFrameCounter.html#abaf7d77bd2fc7eb6125fa605bd645b67"/>
+      </topic>
+      <topic label="MainFrame" href="classMainFrame.html">
+        <topic label="MainFrame" href="classMainFrame.html#a6dbdbdceeedb9d9721344ce121b6d5d2"/>
+        <topic label="~MainFrame" href="classMainFrame.html#a6f3d53c6f9c4353e005f4bcee791cd8c"/>
+        <topic label="demoMode" href="classMainFrame.html#a9349b8b38abdf797b46a9e80020286e7"/>
+        <topic label="engine" href="classMainFrame.html#a3a79598db786fdf628ab06d430c8894b"/>
+        <topic label="miniPanels" href="classMainFrame.html#aba8ebf5434f05d9800c85f1ca3ac242f"/>
+        <topic label="panel" href="classMainFrame.html#a5ef9d804ca26bdde803a0fa04623858f"/>
+      </topic>
+      <topic label="Panel3D" href="classPanel3D.html">
+        <topic label="Panel3D" href="classPanel3D.html#a39e9df8650d92468668b8faa4ef54ae1"/>
+        <topic label="DECLARE_EVENT_TABLE" href="classPanel3D.html#a7f280062193871ece55e7abd1da6a56d"/>
+        <topic label="OnEraseBackGround" href="classPanel3D.html#aaa9072dfdf59b8565da242d3416f769e"/>
+        <topic label="OnPaint" href="classPanel3D.html#ae7824d3615e0ce5be11e0471e5a736a8"/>
+        <topic label="OnSize" href="classPanel3D.html#aa7996f97a77f46934e218544dc16e2b6"/>
+        <topic label="renderer" href="classPanel3D.html#a96120bdea31dc797b1f3acbb8cf5a322"/>
+      </topic>
+      <topic label="Piloter" href="classPiloter.html">
+        <topic label="Piloter" href="classPiloter.html#a1ab555d5bb81d8ff2d787ff49b521561"/>
+        <topic label="AutoRotateCallBack" href="classPiloter.html#a76008500a397466d5304c5a381a4391c"/>
+        <topic label="DECLARE_EVENT_TABLE" href="classPiloter.html#a7f280062193871ece55e7abd1da6a56d"/>
+        <topic label="OnAutoCenter" href="classPiloter.html#abc77adbba0da048446f4555991d87457"/>
+        <topic label="OnAutoRotate" href="classPiloter.html#a47df0c0cc6800694edda71d2c5d79614"/>
+        <topic label="OnCenter" href="classPiloter.html#a1448fc7bf73c753e46d4f9d242d7ba7a"/>
+        <topic label="OnIdle" href="classPiloter.html#ad6eb2585993b1e4886ad5b23b283e8b7"/>
+        <topic label="OnKaleidoscope" href="classPiloter.html#aba38fc6122fc21450cf0951a8371ebf8"/>
+        <topic label="OnNextMethod" href="classPiloter.html#a04d1b764225df2f58372a17ce16abedb"/>
+        <topic label="OnNextModel" href="classPiloter.html#a8f33d47a1b209565dfeb0b34c73ea96f"/>
+        <topic label="OnRotateXM" href="classPiloter.html#af0a235728c0e414ea2b8bcb8edced539"/>
+        <topic label="OnRotateXP" href="classPiloter.html#a67f52a5703baa7b39c4300616605986c"/>
+        <topic label="OnRotateYM" href="classPiloter.html#a8ec383449098c8f490bef7a42e6d726f"/>
+        <topic label="OnRotateYP" href="classPiloter.html#a3bab091cc53fc99af7e4d5330d348329"/>
+        <topic label="OnRotateZM" href="classPiloter.html#a7f7e48e5f267dfc623b9f3b074bc0c00"/>
+        <topic label="OnRotateZP" href="classPiloter.html#a0c842239dd8a3d8bce0e82324ac09db6"/>
+        <topic label="OnSave" href="classPiloter.html#afa337ddc5daf2cfab731eface7c96b05"/>
+        <topic label="OnXM" href="classPiloter.html#a5cbdd4388c9430b64e41e1a943119e37"/>
+        <topic label="OnXP" href="classPiloter.html#a056b9acfbdf86fc160091fc0d1d0868d"/>
+        <topic label="OnYM" href="classPiloter.html#a41da3dbc9a7c8067a69fba886da7f153"/>
+        <topic label="OnYP" href="classPiloter.html#aa50a9dc5927c1ff349d5ccef28cb0d55"/>
+        <topic label="OnZM" href="classPiloter.html#a8b1a8d4afc01e9a714c6ffb596a07edd"/>
+        <topic label="OnZP" href="classPiloter.html#af18db5e5d6374a01714ee693f7a81048"/>
+        <topic label="Update" href="classPiloter.html#aec0783b5a136e042adcc47bae4fe5291"/>
+        <topic label="autorotate" href="classPiloter.html#ad48f2c58224d6d4e95b04437abd630a7"/>
+        <topic label="engine" href="classPiloter.html#a04ee0d142e98779501ddb0ea5f687ac7"/>
+        <topic label="idmodel" href="classPiloter.html#a030d7e5fcd1a51b126ef15c69189d9d1"/>
+        <topic label="lastTime" href="classPiloter.html#abd017c656ffa6dac73d528b55c8ebf1c"/>
+        <topic label="methode" href="classPiloter.html#a6ec98c0a5f8250ccebf5ca8762a7347a"/>
+        <topic label="modele" href="classPiloter.html#a8a321c9517a7e331d168a0ac4198164c"/>
+        <topic label="positionStep" href="classPiloter.html#a18b129be2c9fb6e5b74f8b32503378f6"/>
+        <topic label="rotationStep" href="classPiloter.html#a3dead2e84001827bb21cf341b26bf93b"/>
+        <topic label="status" href="classPiloter.html#adfec01423ae7f2e8f65006cfc6f1418c"/>
+      </topic>
+        <topic label="wx_XP" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba591e3b2e4c7a2c0026933e133165e8c5"/>
+        <topic label="wx_XM" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba180292a377d9291661f2aff7f168a5d5"/>
+        <topic label="wx_YP" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba410bc43dd314dd8df0dc5d63ef346514"/>
+        <topic label="wx_YM" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba99ff918c6d47d4f63e6ec8584a0d4f32"/>
+        <topic label="wx_ZP" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba74cfd3a31a3c883de3f3508b879a35a0"/>
+        <topic label="wx_ZM" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba5af0f49ed867210308de7a5df8fd1da7"/>
+        <topic label="wx_CENTER" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba791f7cb23869ebd931d684c72e6b8c80"/>
+        <topic label="wx_AUTOCENTER" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba5652b339b0879417e97cda04ae9c6dc0"/>
+        <topic label="wx_AUTOROTATE" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba1ffe6f0bf2cf5732bac717c9986a9ea4"/>
+        <topic label="wx_ROTATEXP" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55bae2a8b4cdbac1399fff264e294e545c4f"/>
+        <topic label="wx_ROTATEXM" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba7328992cc542562ae0e1a9e952cf1713"/>
+        <topic label="wx_ROTATEYP" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba9f912c35ce16eed6088e57af4b37d510"/>
+        <topic label="wx_ROTATEYM" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba2fe2203cf8ef3c7a0f512f6062d42140"/>
+        <topic label="wx_ROTATEZP" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55baca0d03b7adb7cfa53d07a72ff5669713"/>
+        <topic label="wx_ROTATEZM" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba815da6aa3bbb043ded48e75dfdda5737"/>
+        <topic label="wx_NEXTMODEL" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba83ffbfbb425a7a029ec53e8239736f2b"/>
+        <topic label="wx_NEXTMETHOD" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55bacdd45ca97358a0163f7d312bc2b9b2ad"/>
+        <topic label="wx_KALEIDOSCOPE" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba6f250899b03ecd90c4bdad148a5b31a6"/>
+        <topic label="wx_SAVE" href="group__widgets.html#gga06fc87d81c62e9abb8790b6e5713c55ba7e0978aa7331c4b7e6c7146722db60b6"/>
+    </topic>
+    <topic label="Les utilitaires" href="group__util.html">
+      <topic label="Array" href="classArray.html">
+        <topic label="ContentPreservation" href="classArray.html#ad83429944685c8081caad9065b3ec33c">
+          <topic label="DO_NOT_PRESERVE_CONTENT" href="classArray.html#ad83429944685c8081caad9065b3ec33cabc121b943677c8ecb2e3329bc71ffc5a"/>
+          <topic label="PRESERVE_CONTENT" href="classArray.html#ad83429944685c8081caad9065b3ec33ca8d89c3a0d4a48d0abeefee95084ce855"/>
+        </topic>
+        <topic label="MemoryReduction" href="classArray.html#ac3d8ba8a64bbb0d86bcab64ad91b5183">
+          <topic label="DO_NOT_REDUCE_MEMORY" href="classArray.html#ac3d8ba8a64bbb0d86bcab64ad91b5183a4a2f75bc53565597590b544d3351b6a9"/>
+          <topic label="REDUCE_MEMORY" href="classArray.html#ac3d8ba8a64bbb0d86bcab64ad91b5183ae65b4a3a2b4695529c01f0dac3e8cfb3"/>
+        </topic>
+        <topic label="Array" href="classArray.html#af9474cac29f3177edf5e8d72ea4a440c"/>
+        <topic label="Array" href="classArray.html#a4a3b505ab1d385200bf0ecbdb0a1663a"/>
+        <topic label="~Array" href="classArray.html#a9338ffdafb6c90a0d192ade96b24550a"/>
+        <topic label="Clear" href="classArray.html#a73b12303e9027cb7a2b35ca268b7b5f1"/>
+        <topic label="Copy" href="classArray.html#ae24e40234904e459d88bc8fe5666f850"/>
+        <topic label="Erase" href="classArray.html#a28a5695e2b1e08de140d345949e956c1"/>
+        <topic label="Fill" href="classArray.html#af5aa8e49ea96dcf4b918f07928e4384c"/>
+        <topic label="GetDefaultMemoryStrategy" href="classArray.html#a316ac8026a537946cdcd10796ec4277f"/>
+        <topic label="Insert" href="classArray.html#a8669a86cb45336b977f3b7219f15adc5"/>
+        <topic label="operator=" href="classArray.html#a860ee41ad06ec091085a6b9136b4f3f6"/>
+        <topic label="PushBack" href="classArray.html#a5bd3e9931bb0066172868dee7ad54e39"/>
+        <topic label="PushFront" href="classArray.html#a6d019de40c86fb3bd35c06fdf9b29691"/>
+        <topic label="Reserve" href="classArray.html#a3daf0d00000a84edf10d9bf9964425b9"/>
+        <topic label="Reserve" href="classArray.html#a6f0c7b0e6226e24a46a97ba4c63728bb"/>
+        <topic label="Resize" href="classArray.html#a92cb647165964833f9b1b28570b28547"/>
+        <topic label="SetDefaultMemoryStrategy" href="classArray.html#afef074623d03339de842c904a7271fe1"/>
+        <topic label="Update" href="classArray.html#aec0783b5a136e042adcc47bae4fe5291"/>
+        <topic label="buffer" href="classArray.html#a3f849d9e75cf5fe805313b3abe69440d"/>
+        <topic label="bufferReservedSize" href="classArray.html#a09d65f653b728d056f5c7f415ed0d194"/>
+        <topic label="bufferSize" href="classArray.html#a747a050a7906886c178a05e713189f73"/>
+        <topic label="data" href="classArray.html#ac2343988de0ddb1ba1390ea5cd8c62dd"/>
+        <topic label="defaultMemoryStrategy" href="classArray.html#affb9e41bbcc527053ce5fa2f72699cfd"/>
+        <topic label="size" href="classArray.html#a439227feff9d7f55384e8780cfc2eb82"/>
+      </topic>
+      <topic label="FaceDepthAccessor" href="classFaceDepthAccessor.html">
+        <topic label="FaceDepthAccessor" href="classFaceDepthAccessor.html#a6f3ebee28f18e78148ab6cb4734cc4f5"/>
+        <topic label="FaceDepthAccessor" href="classFaceDepthAccessor.html#af77be68b468aafb6d0052fb2e21fce1e"/>
+        <topic label="GetValue" href="classFaceDepthAccessor.html#a1e2e0a07db31d10525706b97ce0b493d"/>
+        <topic label="index" href="classFaceDepthAccessor.html#a750b5d744c39a06bfb13e6eb010e35d0"/>
+      </topic>
+      <topic label="FastMath" href="classFastMath.html">
+        <topic label="StaticInitializer" href="classFastMath_1_1StaticInitializer.html">
+          <topic label="StaticInitializer" href="classFastMath_1_1StaticInitializer.html#ae55caa004e04274d72a66b7280b39ad0"/>
+        </topic>
+        <topic label="fastCos" href="classFastMath.html#a1b7308ec7afd953fb377a1a956c61987"/>
+        <topic label="fastSin" href="classFastMath.html#a569cbb993b8163203a9114f61d5bf860"/>
+        <topic label="fastTan" href="classFastMath.html#a4e068d08d14104baafed50eadf829c11"/>
+        <topic label="Initialize" href="classFastMath.html#a98b1050f09da390896f964fb7a892391"/>
+        <topic label="max" href="classFastMath.html#ab0a9d919fe5bf3b9bceb10da74f6a16b"/>
+        <topic label="min" href="classFastMath.html#a64c45d11517cd5ab14bf00321c8f11ad"/>
+        <topic label="Round" href="classFastMath.html#a2851b679f02ced0ff5ffa839fd6ddd9f"/>
+        <topic label="Sqrt" href="classFastMath.html#ae0da0a7ac01b9588644874d9d1f10133"/>
+        <topic label="cosVal" href="classFastMath.html#a49407f78a3b2751601ae87139e65459f"/>
+        <topic label="sinVal" href="classFastMath.html#a2e2f19ead88961af2aaf9b89e5405396"/>
+        <topic label="staticInitializer" href="classFastMath.html#adfb053541243abbec21c393ee03fef14"/>
+        <topic label="tanVal" href="classFastMath.html#a9ffe27eb484285cf41fb7af6f7d6cd29"/>
+      </topic>
+      <topic label="FASTBASICARRAY" href="group__util.html#ga89bf5dae5bb53c667630da61b60cdfaa"/>
+      <topic label="PI" href="group__util.html#ga598a3330b3c21701223ee0ca14316eca"/>
+      <topic label="MemCopy" href="group__util.html#ga64be1ddb1e1a17db8588d56e492f1b5e"/>
+      <topic label="ReallocMemory" href="group__util.html#ga7e4406f237622d8e6027c0998e7fe051"/>
+      <topic label="Sort" href="group__util.html#gaf18916a0da4a35c2deb81deadc38fcb9"/>
+      <topic label="Sort" href="group__util.html#gae667f470f5d08eedc25d0ea2dfc4d857"/>
+    </topic>
+  </topic>
+  <topic label="Data Structures">
+    <topic label="Data Structures" href="annotated.html">
+      <topic label="AmbientLight" href="classAmbientLight.html">
+        <topic label="AmbientLight" href="classAmbientLight.html#abbbca3684a9fad260557db4188c1a967"/>
+        <topic label="ambientColor" href="classAmbientLight.html#ad6ff3fc5b682a297910cd903c13a5f91"/>
+      </topic>
+      <topic label="App" href="classApp.html">
+        <topic label="OnInit" href="classApp.html#aa632f0b3197adeb7777ee5d14a2ac639"/>
+      </topic>
+      <topic label="Array" href="classArray.html">
+        <topic label="ContentPreservation" href="classArray.html#ad83429944685c8081caad9065b3ec33c">
+          <topic label="DO_NOT_PRESERVE_CONTENT" href="classArray.html#ad83429944685c8081caad9065b3ec33cabc121b943677c8ecb2e3329bc71ffc5a"/>
+          <topic label="PRESERVE_CONTENT" href="classArray.html#ad83429944685c8081caad9065b3ec33ca8d89c3a0d4a48d0abeefee95084ce855"/>
+        </topic>
+        <topic label="MemoryReduction" href="classArray.html#ac3d8ba8a64bbb0d86bcab64ad91b5183">
+          <topic label="DO_NOT_REDUCE_MEMORY" href="classArray.html#ac3d8ba8a64bbb0d86bcab64ad91b5183a4a2f75bc53565597590b544d3351b6a9"/>
+          <topic label="REDUCE_MEMORY" href="classArray.html#ac3d8ba8a64bbb0d86bcab64ad91b5183ae65b4a3a2b4695529c01f0dac3e8cfb3"/>
+        </topic>
+        <topic label="Array" href="classArray.html#af9474cac29f3177edf5e8d72ea4a440c"/>
+        <topic label="Array" href="classArray.html#a4a3b505ab1d385200bf0ecbdb0a1663a"/>
+        <topic label="~Array" href="classArray.html#a9338ffdafb6c90a0d192ade96b24550a"/>
+        <topic label="Clear" href="classArray.html#a73b12303e9027cb7a2b35ca268b7b5f1"/>
+        <topic label="Copy" href="classArray.html#ae24e40234904e459d88bc8fe5666f850"/>
+        <topic label="Erase" href="classArray.html#a28a5695e2b1e08de140d345949e956c1"/>
+        <topic label="Fill" href="classArray.html#af5aa8e49ea96dcf4b918f07928e4384c"/>
+        <topic label="GetDefaultMemoryStrategy" href="classArray.html#a316ac8026a537946cdcd10796ec4277f"/>
+        <topic label="Insert" href="classArray.html#a8669a86cb45336b977f3b7219f15adc5"/>
+        <topic label="operator=" href="classArray.html#a860ee41ad06ec091085a6b9136b4f3f6"/>
+        <topic label="PushBack" href="classArray.html#a5bd3e9931bb0066172868dee7ad54e39"/>
+        <topic label="PushFront" href="classArray.html#a6d019de40c86fb3bd35c06fdf9b29691"/>
+        <topic label="Reserve" href="classArray.html#a3daf0d00000a84edf10d9bf9964425b9"/>
+        <topic label="Reserve" href="classArray.html#a6f0c7b0e6226e24a46a97ba4c63728bb"/>
+        <topic label="Resize" href="classArray.html#a92cb647165964833f9b1b28570b28547"/>
+        <topic label="SetDefaultMemoryStrategy" href="classArray.html#afef074623d03339de842c904a7271fe1"/>
+        <topic label="Update" href="classArray.html#aec0783b5a136e042adcc47bae4fe5291"/>
+        <topic label="buffer" href="classArray.html#a3f849d9e75cf5fe805313b3abe69440d"/>
+        <topic label="bufferReservedSize" href="classArray.html#a09d65f653b728d056f5c7f415ed0d194"/>
+        <topic label="bufferSize" href="classArray.html#a747a050a7906886c178a05e713189f73"/>
+        <topic label="data" href="classArray.html#ac2343988de0ddb1ba1390ea5cd8c62dd"/>
+        <topic label="defaultMemoryStrategy" href="classArray.html#affb9e41bbcc527053ce5fa2f72699cfd"/>
+        <topic label="size" href="classArray.html#a439227feff9d7f55384e8780cfc2eb82"/>
+      </topic>
+      <topic label="AssertException" href="classAssertException.html">
+        <topic label="AssertException" href="classAssertException.html#aea270bf70d285dba7bd1cac0bff565a9"/>
+        <topic label="activateDebugHelper" href="classAssertException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classAssertException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classAssertException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classAssertException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classAssertException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classAssertException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classAssertException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classAssertException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classAssertException.html#a028d1fc07980511ee509856f152aed84"/>
+      </topic>
+      <topic label="Buffer" href="classBuffer.html">
+        <topic label="Buffer" href="classBuffer.html#aae55e8dd301a3b9e3149f891dc4242e9"/>
+        <topic label="Buffer" href="classBuffer.html#a47587d18a394fb4b9508c61e3d5f0260"/>
+        <topic label="ClearBuffer" href="classBuffer.html#af28fe6832f4dd3f13033e5c666525f07"/>
+        <topic label="DrawFilledTriangle" href="classBuffer.html#a0e48f4548e5487d71008daa6764ae146"/>
+        <topic label="DrawLine" href="classBuffer.html#afb3a3767e3937452f126b5b2c119bfd5"/>
+        <topic label="DrawPhongTriangle" href="classBuffer.html#a728e1ca86b5948e304f9f9882ab1edd2"/>
+        <topic label="GetImage" href="classBuffer.html#a4ef38e378b6e4ab62aaf628026fb3fdd"/>
+        <topic label="operator=" href="classBuffer.html#a8f787b18579b21350450c2b69e839c13"/>
+        <topic label="SaveToFile" href="classBuffer.html#a2de87ba20a1b60cab627c3eba6330173"/>
+        <topic label="SetPoint" href="classBuffer.html#add98453158d1749d90e7ace68cf0f697"/>
+        <topic label="SetSize" href="classBuffer.html#ab538ca4937f762a51996a8ded3c0ff83"/>
+        <topic label="data" href="classBuffer.html#a4f41f7a22964165cd590dfc90d7b8051"/>
+        <topic label="height" href="classBuffer.html#ad12fc34ce789bce6c8a05d8a17138534"/>
+        <topic label="scanLineComputer" href="classBuffer.html#a818a3f6fc253bf8cae26e14f8371a5ee"/>
+        <topic label="width" href="classBuffer.html#a2474a5474cbff19523a51eb1de01cda4"/>
+        <topic label="zbuffer" href="classBuffer.html#a285fc85e6628a24c750e001e3a28d48f"/>
+      </topic>
+      <topic label="Camera" href="classCamera.html">
+        <topic label="Set" href="classCamera.html#a35b8aabc0859f61b2742e2121b533d1a"/>
+        <topic label="SetFromDrawable" href="classCamera.html#a793d3824dcf7a6078366f39f2823a329"/>
+        <topic label="aspectRatio" href="classCamera.html#a09c1e9032a77407b39a3bd33ee5c4721"/>
+        <topic label="farplan" href="classCamera.html#a7506c73891587947d5324a96dcb4dac6"/>
+        <topic label="nearplan" href="classCamera.html#aff80952f01ee57ce96137b72d0f1106e"/>
+        <topic label="orientation" href="classCamera.html#ac68382ed2484372f1ab29f6e1dc003c7"/>
+        <topic label="orientationInWorld" href="classCamera.html#a6a5163cf05cb41ac895f43891ad52748"/>
+        <topic label="position" href="classCamera.html#a13b25ecba8dc44e0d70a849db0a826ec"/>
+        <topic label="positionInWorld" href="classCamera.html#abbafcac7b38e3dfa845a9001e746916f"/>
+        <topic label="upwardAngle" href="classCamera.html#af430e9f75253dffce669a2ce4b97cca3"/>
+      </topic>
+      <topic label="Color" href="classColor.html">
+        <topic label="Color" href="classColor.html#a1589b83974b42a2f3315624f14c3c92c"/>
+        <topic label="Color" href="classColor.html#a5444d4d51853bdde2b31837a41291612"/>
+        <topic label="operator*" href="classColor.html#afd4a654f141bda2aed5ea397803884e6"/>
+        <topic label="operator*" href="classColor.html#adc6f0cd417e3d21899670d98fd4247de"/>
+        <topic label="operator+" href="classColor.html#af96920cd9c5b839e9b532eac8b0aa50a"/>
+        <topic label="operator==" href="classColor.html#af850bc357d624acc4026ff6685d1ddca"/>
+        <topic label="blue" href="classColor.html#a53125a3aec56167e405e8e5296862ef8"/>
+        <topic label="green" href="classColor.html#a244bc64dc81180dd04a6c11311407256"/>
+        <topic label="red" href="classColor.html#a0122321b07bffb16f3a5cdd27922548c"/>
+      </topic>
+      <topic label="Coord2D" href="classCoord2D.html">
+        <topic label="Coord2D" href="classCoord2D.html#a79c82f75da1b4a5db3ec2874439d6de4"/>
+        <topic label="Coord2D" href="classCoord2D.html#aa5c1f6551cb2b9f5a440b21ce89c7fac"/>
+        <topic label="Distance" href="classCoord2D.html#a54b003ad3378510515b8fb927bd55489"/>
+        <topic label="depth" href="classCoord2D.html#a6153a438c3d8d1be934e19e97e58c60c"/>
+        <topic label="x" href="classCoord2D.html#a6150e0515f7202e2fb518f7206ed97dc"/>
+        <topic label="y" href="classCoord2D.html#a0a2f84ed7838f07779ae24c5a9086d33"/>
+      </topic>
+      <topic label="Coord3D" href="classCoord3D.html">
+        <topic label="Coord3D" href="classCoord3D.html#acd18a8cb420afa82c09098d26fca7ea2"/>
+        <topic label="Coord3D" href="classCoord3D.html#a2a68947c5008ced4b8b9033f2f0e01b9"/>
+        <topic label="display" href="classCoord3D.html#ab51ee85f955451bb6319d0ee6af494fd"/>
+        <topic label="Norm" href="classCoord3D.html#a8ee7eecfcac25d9c4a6693ba1a8da90c"/>
+        <topic label="Normalize" href="classCoord3D.html#af279e0f0ff720ee54d6733674dfda50a"/>
+        <topic label="operator*" href="classCoord3D.html#a8bb9c5f4fed6dc59e7b8fec24297402f"/>
+        <topic label="operator*" href="classCoord3D.html#a34607d17e562bd159d31f32bd0807b02"/>
+        <topic label="operator*=" href="classCoord3D.html#af8cc0e7abd040ca117b4e9b6d6609adc"/>
+        <topic label="operator+" href="classCoord3D.html#accf2e4423dcbc6dfc29aff77d26bc7be"/>
+        <topic label="operator+=" href="classCoord3D.html#a2d77671b6e95f7019a5e8bfae09060ad"/>
+        <topic label="operator-" href="classCoord3D.html#a3541dda3bab2de25bf33bce049d23238"/>
+        <topic label="operator-" href="classCoord3D.html#ad4724b1a19a3d55a37e0bce504102313"/>
+        <topic label="operator^" href="classCoord3D.html#aef29fdd074cfdaad800a864a7fff9eae"/>
+        <topic label="x" href="classCoord3D.html#af88b946fb90d5f08b5fb740c70e98c10"/>
+        <topic label="y" href="classCoord3D.html#ab927965981178aa1fba979a37168db2a"/>
+        <topic label="z" href="classCoord3D.html#ab3e6ed577a7c669c19de1f9c1b46c872"/>
+      </topic>
+      <topic label="Drawable" href="classDrawable.html">
+        <topic label="CenterObjectToOrigin" href="classDrawable.html#a0ebb9e34547ac4eac139303e86f2161d"/>
+        <topic label="LoadFromO3DFile" href="classDrawable.html#ab98b10adab688da4bb4a3b1ca5a23e5c"/>
+        <topic label="LoadPredefinedComprime" href="classDrawable.html#adf64780b78e92ec742db53166058bf61"/>
+        <topic label="LoadPredefinedDuck" href="classDrawable.html#af444886efc68d2d0781dd23890bc6dca"/>
+        <topic label="LoadPredefinedEtoile" href="classDrawable.html#ae628b7d534d1a73a014b47dc551eb9d0"/>
+        <topic label="LoadPredefinedHead" href="classDrawable.html#aaa3904e70b8698dd5c0bf28d59b806a5"/>
+        <topic label="LoadPredefinedNoeud" href="classDrawable.html#aedfb8e2e4d917ba330b15a3399419006"/>
+        <topic label="LoadPredefinedPolytechLogo" href="classDrawable.html#a05f0514f5404482658d3cf0a5b954c35"/>
+        <topic label="LoadPredefinedSphere" href="classDrawable.html#acae6b6314893cebd63eae7a60884991b"/>
+        <topic label="LoadPredefinedTeapot" href="classDrawable.html#a61575c2f4a2545dc91c679da45cd380f"/>
+        <topic label="LoadPredefinedTore" href="classDrawable.html#aeefbc5e6da94728d7934c457010c43f8"/>
+        <topic label="SaveAsCode" href="classDrawable.html#acd8353ef7cc609cc8e1208527d2ecf2b"/>
+        <topic label="colorOnFace" href="classDrawable.html#a67d1b29e7326f5e8d3e7350fc992a7f2"/>
+        <topic label="faceColors" href="classDrawable.html#a763aadeadb1c8e63bb51007600d040b2"/>
+        <topic label="faces" href="classDrawable.html#ab3a0b6f6ff93045c74de3a65b7471a4a"/>
+        <topic label="pointColors" href="classDrawable.html#af43fab0187faca10c5cc3b69c905fe11"/>
+        <topic label="points" href="classDrawable.html#ad96a5dca155d9ce8edd28b123a5ea9a9"/>
+        <topic label="radius" href="classDrawable.html#a3f67c53b80389c5f53961936edba04c9"/>
+      </topic>
+      <topic label="DrawableInCameraCoordinates" href="classDrawableInCameraCoordinates.html">
+        <topic label="Compute" href="classDrawableInCameraCoordinates.html#a8b57b7c67075cb1d3fedea834ce45f84"/>
+        <topic label="ComputeInCameraCoordinates" href="classDrawableInCameraCoordinates.html#a2d0f2ffef076de33b8ff848ff635019d"/>
+        <topic label="ComputeVisibilityOfFaces" href="classDrawableInCameraCoordinates.html#af77104a1e77013c671e82597cda16b56"/>
+        <topic label="IsFaceVisible" href="classDrawableInCameraCoordinates.html#a9f8274d98348438b30bd29242e8c33db"/>
+        <topic label="SortVisibleFaces" href="classDrawableInCameraCoordinates.html#a3a492626db95de76cb975312265e0544"/>
+        <topic label="faceDepths" href="classDrawableInCameraCoordinates.html#ae14cf818bd457b160dd3113676a8dc74"/>
+        <topic label="faceNormals" href="classDrawableInCameraCoordinates.html#a595d422dc98448f091af576a1e19c65a"/>
+        <topic label="faceVisibles" href="classDrawableInCameraCoordinates.html#ada0a6abe5654f018c7b7424a391479a9"/>
+        <topic label="pointNormals" href="classDrawableInCameraCoordinates.html#ac14ca86650a63816757747bb1e9e741b"/>
+        <topic label="points" href="classDrawableInCameraCoordinates.html#ad96a5dca155d9ce8edd28b123a5ea9a9"/>
+        <topic label="pointsNormalized" href="classDrawableInCameraCoordinates.html#abb5bd08691ddc5728cb4e55a99d4c9c8"/>
+        <topic label="sortedVisibleFaces" href="classDrawableInCameraCoordinates.html#aa2eee77edf04ec470f4c950939460677"/>
+      </topic>
+      <topic label="Engine" href="classEngine.html">
+        <topic label="Engine" href="classEngine.html#a9fda9f3ec029922558d808f9fc3130b5"/>
+        <topic label="Engine" href="classEngine.html#a916e4a9cdcdb4e2ee4d31c15330f36f4"/>
+        <topic label="~Engine" href="classEngine.html#a45936cce93ebf1bfdfd7ba305e03e864"/>
+        <topic label="addRenderer" href="classEngine.html#aa284add1070d94badb07df4d769577e7"/>
+        <topic label="operator=" href="classEngine.html#a95d968a881847d03ca559cc2df92b038"/>
+        <topic label="ReDraw" href="classEngine.html#aff462764ace22490b28680812463b811"/>
+        <topic label="Refresh" href="classEngine.html#ac3c6292a931287d34f6e353524a6a3d0"/>
+        <topic label="SetNeedUpdates" href="classEngine.html#a87481bda0656dab762ff8c5814300a82"/>
+        <topic label="camera" href="classEngine.html#a2008f4ab70b5e4104c2ca43932536ddf"/>
+        <topic label="drawable" href="classEngine.html#a26009c169bd5e8eb01d6c879d4b808b0"/>
+        <topic label="effectiveDrawable" href="classEngine.html#aa935a8b2ac8cfc8c0dc7cee3b0c3c169"/>
+        <topic label="needUpdates" href="classEngine.html#a3053004071f01a80399aead65cadc7a9"/>
+        <topic label="piloter" href="classEngine.html#aa16fe96804f02d05e60866118164d07a"/>
+        <topic label="renderers" href="classEngine.html#a9fb90c24f8512809277f5d94cde78aac"/>
+        <topic label="rot" href="classEngine.html#a7bff61835e27249cd022e4f37a236c8a"/>
+      </topic>
+      <topic label="Exception" href="classException.html">
+        <topic label="Exception" href="classException.html#abfbc23b99b2e78b609d50ac688611236"/>
+        <topic label="Exception" href="classException.html#a0f608f07130c27a40b20f425ef8c2fcd"/>
+        <topic label="activateDebugHelper" href="classException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classException.html#a028d1fc07980511ee509856f152aed84"/>
+        <topic label="file" href="classException.html#a1681513c5626e6224da4405a8c6468b7"/>
+        <topic label="line" href="classException.html#a41ebd28ef1d7c6ade45642cb6acc1039"/>
+        <topic label="msg" href="classException.html#a5647290bb5caf4f9dd1680b46cb931fa"/>
+      </topic>
+      <topic label="Face" href="classFace.html">
+        <topic label="Face" href="classFace.html#a54faf8f0db9f6027cf884102ff4252d1"/>
+        <topic label="Face" href="classFace.html#a1342c82712dd74036d8eba5c974e1532"/>
+        <topic label="index1" href="classFace.html#ad1b0b6e5a5dc2e8040053a737f33f410"/>
+        <topic label="index2" href="classFace.html#aeda6d5f39f755fd62ca156c9dfccea5e"/>
+        <topic label="index3" href="classFace.html#afdabd4951904cc2c053249efc5d6808f"/>
+      </topic>
+      <topic label="FaceDepthAccessor" href="classFaceDepthAccessor.html">
+        <topic label="FaceDepthAccessor" href="classFaceDepthAccessor.html#a6f3ebee28f18e78148ab6cb4734cc4f5"/>
+        <topic label="FaceDepthAccessor" href="classFaceDepthAccessor.html#af77be68b468aafb6d0052fb2e21fce1e"/>
+        <topic label="GetValue" href="classFaceDepthAccessor.html#a1e2e0a07db31d10525706b97ce0b493d"/>
+        <topic label="index" href="classFaceDepthAccessor.html#a750b5d744c39a06bfb13e6eb010e35d0"/>
+      </topic>
+      <topic label="FastMath" href="classFastMath.html">
+        <topic label="StaticInitializer" href="classFastMath_1_1StaticInitializer.html">
+          <topic label="StaticInitializer" href="classFastMath_1_1StaticInitializer.html#ae55caa004e04274d72a66b7280b39ad0"/>
+        </topic>
+        <topic label="fastCos" href="classFastMath.html#a1b7308ec7afd953fb377a1a956c61987"/>
+        <topic label="fastSin" href="classFastMath.html#a569cbb993b8163203a9114f61d5bf860"/>
+        <topic label="fastTan" href="classFastMath.html#a4e068d08d14104baafed50eadf829c11"/>
+        <topic label="Initialize" href="classFastMath.html#a98b1050f09da390896f964fb7a892391"/>
+        <topic label="max" href="classFastMath.html#ab0a9d919fe5bf3b9bceb10da74f6a16b"/>
+        <topic label="min" href="classFastMath.html#a64c45d11517cd5ab14bf00321c8f11ad"/>
+        <topic label="Round" href="classFastMath.html#a2851b679f02ced0ff5ffa839fd6ddd9f"/>
+        <topic label="Sqrt" href="classFastMath.html#ae0da0a7ac01b9588644874d9d1f10133"/>
+        <topic label="cosVal" href="classFastMath.html#a49407f78a3b2751601ae87139e65459f"/>
+        <topic label="sinVal" href="classFastMath.html#a2e2f19ead88961af2aaf9b89e5405396"/>
+        <topic label="staticInitializer" href="classFastMath.html#adfb053541243abbec21c393ee03fef14"/>
+        <topic label="tanVal" href="classFastMath.html#a9ffe27eb484285cf41fb7af6f7d6cd29"/>
+      </topic>
+      <topic label="FrameCounter" href="classFrameCounter.html">
+        <topic label="DecFrameCount" href="classFrameCounter.html#a62654cbab3fb809b0bb96ac85d7f750f"/>
+        <topic label="IncFrameCount" href="classFrameCounter.html#a6da4a7c2c604e2d7971fc35c67547cf5"/>
+        <topic label="frameCount" href="classFrameCounter.html#abaf7d77bd2fc7eb6125fa605bd645b67"/>
+      </topic>
+      <topic label="IllegalArgumentException" href="classIllegalArgumentException.html">
+        <topic label="IllegalArgumentException" href="classIllegalArgumentException.html#a6a3b72d3eefec8a32728400a7e4c037e"/>
+        <topic label="activateDebugHelper" href="classIllegalArgumentException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classIllegalArgumentException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classIllegalArgumentException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classIllegalArgumentException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classIllegalArgumentException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classIllegalArgumentException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classIllegalArgumentException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classIllegalArgumentException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classIllegalArgumentException.html#a028d1fc07980511ee509856f152aed84"/>
+      </topic>
+      <topic label="IndexOutOfBoundsException" href="classIndexOutOfBoundsException.html">
+        <topic label="IndexOutOfBoundsException" href="classIndexOutOfBoundsException.html#a79efbcba7087fc83f16b83ad00f9ece3"/>
+        <topic label="activateDebugHelper" href="classIndexOutOfBoundsException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classIndexOutOfBoundsException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classIndexOutOfBoundsException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getIndex" href="classIndexOutOfBoundsException.html#a5775df451a32aa32fab7fac48a1c1e5c"/>
+        <topic label="getLine" href="classIndexOutOfBoundsException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMax" href="classIndexOutOfBoundsException.html#acf55f26c252c2dcf31065171563a2dbc"/>
+        <topic label="getMessage" href="classIndexOutOfBoundsException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="getMin" href="classIndexOutOfBoundsException.html#a5ace44d3c950b86ba9307797ab019e14"/>
+        <topic label="raiseSIGTRAP" href="classIndexOutOfBoundsException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classIndexOutOfBoundsException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classIndexOutOfBoundsException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classIndexOutOfBoundsException.html#a028d1fc07980511ee509856f152aed84"/>
+        <topic label="index" href="classIndexOutOfBoundsException.html#a750b5d744c39a06bfb13e6eb010e35d0"/>
+        <topic label="max" href="classIndexOutOfBoundsException.html#ae1e1dde676c120fa6d10f3bb2c14059e"/>
+        <topic label="min" href="classIndexOutOfBoundsException.html#a3e202b201e6255d975cd6d3aff1f5a4d"/>
+      </topic>
+      <topic label="MainFrame" href="classMainFrame.html">
+        <topic label="MainFrame" href="classMainFrame.html#a6dbdbdceeedb9d9721344ce121b6d5d2"/>
+        <topic label="~MainFrame" href="classMainFrame.html#a6f3d53c6f9c4353e005f4bcee791cd8c"/>
+        <topic label="demoMode" href="classMainFrame.html#a9349b8b38abdf797b46a9e80020286e7"/>
+        <topic label="engine" href="classMainFrame.html#a3a79598db786fdf628ab06d430c8894b"/>
+        <topic label="miniPanels" href="classMainFrame.html#aba8ebf5434f05d9800c85f1ca3ac242f"/>
+        <topic label="panel" href="classMainFrame.html#a5ef9d804ca26bdde803a0fa04623858f"/>
+      </topic>
+      <topic label="MemoryException" href="classMemoryException.html">
+        <topic label="MemoryException" href="classMemoryException.html#a9a870dc0cee550757b82dc72b8f184a2"/>
+        <topic label="activateDebugHelper" href="classMemoryException.html#aa3fae4679856a97bb5d5623afcfe0369"/>
+        <topic label="desactivateDebugHelper" href="classMemoryException.html#a2cff6ab94a15bdd544f7f48c2cea33c6"/>
+        <topic label="getFile" href="classMemoryException.html#a2e13e0b72c7283cd2919db1327a58cad"/>
+        <topic label="getLine" href="classMemoryException.html#ad8a37bf1d63efaa33048d6ca827f6a57"/>
+        <topic label="getMessage" href="classMemoryException.html#a523b1177f2bb6d7eff55f0ff74661978"/>
+        <topic label="raiseSIGTRAP" href="classMemoryException.html#abb048cb237b0a1b672ee274d1c95a003"/>
+        <topic label="setLocation" href="classMemoryException.html#a7abbf42e25c8a6a4bc792c94ec00a25f"/>
+        <topic label="setMessage" href="classMemoryException.html#a16f736ac87c7f172717bb028124d56e9"/>
+        <topic label="what" href="classMemoryException.html#a028d1fc07980511ee509856f152aed84"/>
+      </topic>
+      <topic label="Panel3D" href="classPanel3D.html">
+        <topic label="Panel3D" href="classPanel3D.html#a39e9df8650d92468668b8faa4ef54ae1"/>
+        <topic label="DECLARE_EVENT_TABLE" href="classPanel3D.html#a7f280062193871ece55e7abd1da6a56d"/>
+        <topic label="OnEraseBackGround" href="classPanel3D.html#aaa9072dfdf59b8565da242d3416f769e"/>
+        <topic label="OnPaint" href="classPanel3D.html#ae7824d3615e0ce5be11e0471e5a736a8"/>
+        <topic label="OnSize" href="classPanel3D.html#aa7996f97a77f46934e218544dc16e2b6"/>
+        <topic label="renderer" href="classPanel3D.html#a96120bdea31dc797b1f3acbb8cf5a322"/>
+      </topic>
+      <topic label="Piloter" href="classPiloter.html">
+        <topic label="Piloter" href="classPiloter.html#a1ab555d5bb81d8ff2d787ff49b521561"/>
+        <topic label="AutoRotateCallBack" href="classPiloter.html#a76008500a397466d5304c5a381a4391c"/>
+        <topic label="DECLARE_EVENT_TABLE" href="classPiloter.html#a7f280062193871ece55e7abd1da6a56d"/>
+        <topic label="OnAutoCenter" href="classPiloter.html#abc77adbba0da048446f4555991d87457"/>
+        <topic label="OnAutoRotate" href="classPiloter.html#a47df0c0cc6800694edda71d2c5d79614"/>
+        <topic label="OnCenter" href="classPiloter.html#a1448fc7bf73c753e46d4f9d242d7ba7a"/>
+        <topic label="OnIdle" href="classPiloter.html#ad6eb2585993b1e4886ad5b23b283e8b7"/>
+        <topic label="OnKaleidoscope" href="classPiloter.html#aba38fc6122fc21450cf0951a8371ebf8"/>
+        <topic label="OnNextMethod" href="classPiloter.html#a04d1b764225df2f58372a17ce16abedb"/>
+        <topic label="OnNextModel" href="classPiloter.html#a8f33d47a1b209565dfeb0b34c73ea96f"/>
+        <topic label="OnRotateXM" href="classPiloter.html#af0a235728c0e414ea2b8bcb8edced539"/>
+        <topic label="OnRotateXP" href="classPiloter.html#a67f52a5703baa7b39c4300616605986c"/>
+        <topic label="OnRotateYM" href="classPiloter.html#a8ec383449098c8f490bef7a42e6d726f"/>
+        <topic label="OnRotateYP" href="classPiloter.html#a3bab091cc53fc99af7e4d5330d348329"/>
+        <topic label="OnRotateZM" href="classPiloter.html#a7f7e48e5f267dfc623b9f3b074bc0c00"/>
+        <topic label="OnRotateZP" href="classPiloter.html#a0c842239dd8a3d8bce0e82324ac09db6"/>
+        <topic label="OnSave" href="classPiloter.html#afa337ddc5daf2cfab731eface7c96b05"/>
+        <topic label="OnXM" href="classPiloter.html#a5cbdd4388c9430b64e41e1a943119e37"/>
+        <topic label="OnXP" href="classPiloter.html#a056b9acfbdf86fc160091fc0d1d0868d"/>
+        <topic label="OnYM" href="classPiloter.html#a41da3dbc9a7c8067a69fba886da7f153"/>
+        <topic label="OnYP" href="classPiloter.html#aa50a9dc5927c1ff349d5ccef28cb0d55"/>
+        <topic label="OnZM" href="classPiloter.html#a8b1a8d4afc01e9a714c6ffb596a07edd"/>
+        <topic label="OnZP" href="classPiloter.html#af18db5e5d6374a01714ee693f7a81048"/>
+        <topic label="Update" href="classPiloter.html#aec0783b5a136e042adcc47bae4fe5291"/>
+        <topic label="autorotate" href="classPiloter.html#ad48f2c58224d6d4e95b04437abd630a7"/>
+        <topic label="engine" href="classPiloter.html#a04ee0d142e98779501ddb0ea5f687ac7"/>
+        <topic label="idmodel" href="classPiloter.html#a030d7e5fcd1a51b126ef15c69189d9d1"/>
+        <topic label="lastTime" href="classPiloter.html#abd017c656ffa6dac73d528b55c8ebf1c"/>
+        <topic label="methode" href="classPiloter.html#a6ec98c0a5f8250ccebf5ca8762a7347a"/>
+        <topic label="modele" href="classPiloter.html#a8a321c9517a7e331d168a0ac4198164c"/>
+        <topic label="positionStep" href="classPiloter.html#a18b129be2c9fb6e5b74f8b32503378f6"/>
+        <topic label="rotationStep" href="classPiloter.html#a3dead2e84001827bb21cf341b26bf93b"/>
+        <topic label="status" href="classPiloter.html#adfec01423ae7f2e8f65006cfc6f1418c"/>
+      </topic>
+      <topic label="PointLight" href="classPointLight.html">
+        <topic label="PointLight" href="classPointLight.html#aeccd179febfc67fc7d0e20badbdd60e2"/>
+        <topic label="GetColor" href="classPointLight.html#acf011e0638c13efa2afdd31c3204d3fa"/>
+        <topic label="diffuseColor" href="classPointLight.html#a94ef1f16b7f48b48cbb606231e527ba4"/>
+        <topic label="position" href="classPointLight.html#a13b25ecba8dc44e0d70a849db0a826ec"/>
+      </topic>
+      <topic label="Renderable" href="classRenderable.html">
+        <topic label="ComputeRenderable" href="classRenderable.html#a8879f0394c3d191606a6ff93a07a6cad"/>
+        <topic label="points2D" href="classRenderable.html#a47b436bfe726a23ddba74b100d9e0b96"/>
+      </topic>
+      <topic label="Renderer" href="classRenderer.html">
+        <topic label="EMode" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787e">
+          <topic label="Filaire" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787eab33ffe255907db4e53fd6d99798340a7"/>
+          <topic label="FilaireCache" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea98df412af1a7f33b5c349b35eebc7a2d"/>
+          <topic label="FacePleine" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea393a50b5533e3a09da974655fd443d85"/>
+          <topic label="Lambert" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea14555e3c128b33258a3715ceb70e404a"/>
+          <topic label="Gouraud" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea99f881823fa5adb7828dcded3b823cb3"/>
+          <topic label="Phong" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787eafddebb2d49591c42cb6890f0afc9ec9b"/>
+          <topic label="FacePleineZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea7c1e0bd0377d15fcae549e1e2fbec6b0"/>
+          <topic label="LambertZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea5b99b567830c285d58c732cebf913ea6"/>
+          <topic label="GouraudZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787ea1f0196ee53d70b331c9bd2196601a285"/>
+          <topic label="PhongZBuffer" href="classRenderer.html#a837590fd5310ff5df56ffcf7c394787eac201cd814db473094de29ef9f697f8c2"/>
+        </topic>
+        <topic label="Renderer" href="classRenderer.html#a08ebb7aa384467938296f09974a9f89d"/>
+        <topic label="~Renderer" href="classRenderer.html#afa18f5f1998b410a88017638a164cd89"/>
+        <topic label="Draw" href="classRenderer.html#a3d5cf0d8d37b6b17224867eb397c9a16"/>
+        <topic label="DrawBufferOnDC" href="classRenderer.html#a405d91da4bec5d75225087c021d2fe5f"/>
+        <topic label="DrawFacePleine" href="classRenderer.html#a3d064266767019ddfea69099c581bd55"/>
+        <topic label="DrawFilaire" href="classRenderer.html#a2b1e7810d3dadc2e2ac426f229755977"/>
+        <topic label="DrawFilaireCache" href="classRenderer.html#a19a1f7177463b8cc71abfe2ab6914729"/>
+        <topic label="DrawGouraud" href="group__light.html#gac36d02af4bc6d6048570075dda51d898"/>
+        <topic label="DrawLambert" href="group__light.html#ga3753c23820a8932be590ac880a4bf494"/>
+        <topic label="DrawPhong" href="group__light.html#gace43eb20003a5db612a0dffebff9773e"/>
+        <topic label="ReDraw" href="classRenderer.html#aff462764ace22490b28680812463b811"/>
+        <topic label="SetSize" href="classRenderer.html#a1b1df10b3400ab30e6ca05e616bcaf7d"/>
+        <topic label="ambientLight" href="classRenderer.html#a1fc084947ae7335283473aa3cb078786"/>
+        <topic label="buffer" href="classRenderer.html#a7d02dfdf8c80202d1f4d9217b53a20dd"/>
+        <topic label="buffers" href="classRenderer.html#add0e3689906ac76e98e1c7c0c7d1b218"/>
+        <topic label="current" href="classRenderer.html#a136992b1bb344dd5565b75a793154aa6"/>
+        <topic label="currentBuffer" href="classRenderer.html#a0c04e2241cc530e4cef4c4b0be213d4e"/>
+        <topic label="drawable" href="classRenderer.html#a89eb9efc493449dbc646bccc8e0cc828"/>
+        <topic label="effectiveDrawable" href="classRenderer.html#a7c8afc11512f8fa2ab673d7ffbd22e12"/>
+        <topic label="engine" href="classRenderer.html#a04ee0d142e98779501ddb0ea5f687ac7"/>
+        <topic label="height" href="classRenderer.html#ad12fc34ce789bce6c8a05d8a17138534"/>
+        <topic label="lastBufferAvailiable" href="classRenderer.html#ac4c7fc94e73e96c39a187766cb6ad141"/>
+        <topic label="mode" href="classRenderer.html#a8990f43132a01fd08e79a831b713f9d8"/>
+        <topic label="owner" href="classRenderer.html#a6a917eb833c5ec5f5773e6bf212ed853"/>
+        <topic label="pointLight" href="classRenderer.html#ab77982c6290c3178e472207d92690ce0"/>
+        <topic label="renderable" href="classRenderer.html#aa47d5b3ceb5da1ee836f78e1bb16e836"/>
+        <topic label="size" href="classRenderer.html#af74c9b4fbc83e661eb751e3564b997ab"/>
+        <topic label="width" href="classRenderer.html#a2474a5474cbff19523a51eb1de01cda4"/>
+      </topic>
+      <topic label="Rotation" href="classRotation.html">
+        <topic label="Rotation" href="classRotation.html#aac8a569afc15308dac89f775076a4d35"/>
+        <topic label="Rotation" href="classRotation.html#ac451476e796eee868f2e9a3846494c1a"/>
+        <topic label="display" href="classRotation.html#ab51ee85f955451bb6319d0ee6af494fd"/>
+        <topic label="operator*" href="classRotation.html#ac328394f01df1a67ac658c8ec9976ae5"/>
+        <topic label="operator*" href="classRotation.html#a8363e9cc0a7610c40e3ff2ff2d22800e"/>
+        <topic label="transpose" href="classRotation.html#a5fcc3d64297cee0ffe3d88499df49ba3"/>
+        <topic label="coef" href="classRotation.html#a2d59bbeda1a3c0590056060563b0da74"/>
+      </topic>
+      <topic label="ScanLineComputer" href="classScanLineComputer.html">
+        <topic label="ScanLineComputer" href="classScanLineComputer.html#acd6bee771804164a8799841148c7d6b3"/>
+        <topic label="AddEdge" href="classScanLineComputer.html#af9276f427f49ddb4a84c24b3c194a3d8"/>
+        <topic label="AddPoint" href="classScanLineComputer.html#afaf049ade09a7f2f02e31e54b8c51415"/>
+        <topic label="Compute" href="classScanLineComputer.html#adb7aedb25acde894453707b5f706dbf8"/>
+        <topic label="Init" href="classScanLineComputer.html#a1e3b6d38df0786ccf7f938d60e386aae"/>
+        <topic label="SetSize" href="classScanLineComputer.html#ab538ca4937f762a51996a8ded3c0ff83"/>
+        <topic label="height" href="classScanLineComputer.html#ad12fc34ce789bce6c8a05d8a17138534"/>
+        <topic label="left" href="classScanLineComputer.html#a56fb314e98f6e016cd1c35cae3987ecc"/>
+        <topic label="leftweight" href="classScanLineComputer.html#acbcd1a236d96fed310bde82658877e9e"/>
+        <topic label="right" href="classScanLineComputer.html#ad1d88cfd9fc21300c267bc523e11b966"/>
+        <topic label="rightweight" href="classScanLineComputer.html#ac76023f90054f2a01cc885a79662b04e"/>
+        <topic label="width" href="classScanLineComputer.html#a2474a5474cbff19523a51eb1de01cda4"/>
+        <topic label="ymax" href="classScanLineComputer.html#a740732a581a525ffdac6d4124d517d0e"/>
+        <topic label="ymin" href="classScanLineComputer.html#a8f91ffd86aa304f2ca807ff84fa2fe87"/>
+      </topic>
+      <topic label="ZBuffer" href="classZBuffer.html">
+        <topic label="ZBuffer" href="classZBuffer.html#ad9f3c0c21913cc15241184183af1d443"/>
+        <topic label="Disable" href="classZBuffer.html#a0b0a8402327309e2554c218967e472fe"/>
+        <topic label="Enable" href="classZBuffer.html#ab54a4752efd8105eb26e795c150a0e4c"/>
+        <topic label="Init" href="classZBuffer.html#a1e3b6d38df0786ccf7f938d60e386aae"/>
+        <topic label="ReplaceCurrent" href="classZBuffer.html#a5a77d13fa7f52827534f986a25c3d0bd"/>
+        <topic label="SetSize" href="classZBuffer.html#ab538ca4937f762a51996a8ded3c0ff83"/>
+        <topic label="depths" href="classZBuffer.html#a205583a88a7fd538a7a9420563ae3e68"/>
+        <topic label="enabled" href="classZBuffer.html#a8740ba80e30dd75e71d09fa1dcf04f3d"/>
+      </topic>
+    </topic>
+    <topic label="Data Structure Index" href="classes.html"/>
+    <topic label="Class Hierarchy" href="hierarchy.html">
+      <topic label="AmbientLight" href="classAmbientLight.html"/>
+      <topic label="Array&lt; TData &gt;" href="classArray.html"/>
+      <topic label="Array&lt; Array&lt; double &gt; &gt;" href="classArray.html"/>
+      <topic label="Array&lt; bool &gt;" href="classArray.html"/>
+      <topic label="Array&lt; Color &gt;" href="classArray.html"/>
+      <topic label="Array&lt; Coord2D &gt;" href="classArray.html"/>
+      <topic label="Array&lt; Coord3D &gt;" href="classArray.html"/>
+      <topic label="Array&lt; double &gt;" href="classArray.html"/>
+      <topic label="Array&lt; Face &gt;" href="classArray.html"/>
+      <topic label="Array&lt; FaceDepthAccessor &gt;" href="classArray.html"/>
+      <topic label="Array&lt; int &gt;" href="classArray.html"/>
+      <topic label="Array&lt; Renderer * &gt;" href="classArray.html"/>
+      <topic label="Buffer" href="classBuffer.html"/>
+      <topic label="Camera" href="classCamera.html"/>
+      <topic label="Color" href="classColor.html"/>
+      <topic label="Coord2D" href="classCoord2D.html"/>
+      <topic label="Coord3D" href="classCoord3D.html"/>
+      <topic label="Drawable" href="classDrawable.html"/>
+      <topic label="DrawableInCameraCoordinates" href="classDrawableInCameraCoordinates.html"/>
+      <topic label="Engine" href="classEngine.html"/>
+      <topic label="Exception" href="classException.html">
+        <topic label="AssertException" href="classAssertException.html"/>
+        <topic label="IllegalArgumentException" href="classIllegalArgumentException.html"/>
+        <topic label="IndexOutOfBoundsException" href="classIndexOutOfBoundsException.html"/>
+        <topic label="MemoryException" href="classMemoryException.html"/>
+      </topic>
+      <topic label="Face" href="classFace.html"/>
+      <topic label="FaceDepthAccessor" href="classFaceDepthAccessor.html"/>
+      <topic label="FastMath" href="classFastMath.html"/>
+      <topic label="FastMath::StaticInitializer" href="classFastMath_1_1StaticInitializer.html"/>
+      <topic label="FrameCounter" href="classFrameCounter.html"/>
+      <topic label="PointLight" href="classPointLight.html"/>
+      <topic label="Renderable" href="classRenderable.html"/>
+      <topic label="Renderer" href="classRenderer.html"/>
+      <topic label="Rotation" href="classRotation.html"/>
+      <topic label="ScanLineComputer" href="classScanLineComputer.html"/>
+      <topic label="wxApp">
+        <topic label="App" href="classApp.html"/>
+      </topic>
+      <topic label="wxFrame">
+        <topic label="MainFrame" href="classMainFrame.html"/>
+      </topic>
+      <topic label="wxPanel">
+        <topic label="Panel3D" href="classPanel3D.html"/>
+        <topic label="Piloter" href="classPiloter.html"/>
+      </topic>
+      <topic label="ZBuffer" href="classZBuffer.html"/>
+    </topic>
+    <topic label="Data Fields" href="functions.html">
+      <topic label="All" href="functions.html">
+        <topic label="a" href="functions.html"/>
+        <topic label="b" href="functions_0x62.html"/>
+        <topic label="c" href="functions_0x63.html"/>
+        <topic label="d" href="functions_0x64.html"/>
+        <topic label="e" href="functions_0x65.html"/>
+        <topic label="f" href="functions_0x66.html"/>
+        <topic label="g" href="functions_0x67.html"/>
+        <topic label="h" href="functions_0x68.html"/>
+        <topic label="i" href="functions_0x69.html"/>
+        <topic label="l" href="functions_0x6c.html"/>
+        <topic label="m" href="functions_0x6d.html"/>
+        <topic label="n" href="functions_0x6e.html"/>
+        <topic label="o" href="functions_0x6f.html"/>
+        <topic label="p" href="functions_0x70.html"/>
+        <topic label="r" href="functions_0x72.html"/>
+        <topic label="s" href="functions_0x73.html"/>
+        <topic label="t" href="functions_0x74.html"/>
+        <topic label="u" href="functions_0x75.html"/>
+        <topic label="w" href="functions_0x77.html"/>
+        <topic label="x" href="functions_0x78.html"/>
+        <topic label="y" href="functions_0x79.html"/>
+        <topic label="z" href="functions_0x7a.html"/>
+        <topic label="~" href="functions_0x7e.html"/>
+      </topic>
+      <topic label="Functions" href="functions_func.html"/>
+      <topic label="Variables" href="functions_vars.html"/>
+      <topic label="Enumerations" href="functions_enum.html"/>
+      <topic label="Enumerator" href="functions_eval.html"/>
+    </topic>
+  </topic>
+  <topic label="Files">
+    <topic label="File List" href="files.html">
+      <topic label="App.h" href="App_8h.html">
+        <topic label="StudentsNames" href="App_8h.html#a2810180e063c97949ad2627f765cdbeb"/>
+      </topic>
+      <topic label="Array.h" href="Array_8h.html">
+      </topic>
+      <topic label="AssertException.h" href="AssertException_8h.html">
+        <topic label="ASSERT" href="AssertException_8h.html#a0966b817b229d48e5ffc7feab19a0be6"/>
+        <topic label="ASSERT_MSG" href="AssertException_8h.html#a0fe7531ed1a24b22be126715fa750e65"/>
+      </topic>
+      <topic label="Buffer.h" href="Buffer_8h.html">
+      </topic>
+      <topic label="Camera.h" href="Camera_8h.html">
+      </topic>
+      <topic label="Color.h" href="Color_8h.html">
+      </topic>
+      <topic label="Config.h" href="Config_8h.html"/>
+      <topic label="Coord2D.h" href="Coord2D_8h.html">
+      </topic>
+      <topic label="Coord3D.h" href="Coord3D_8h.html">
+      </topic>
+      <topic label="Drawable.h" href="Drawable_8h.html">
+      </topic>
+      <topic label="DrawableInCameraCoordinates.h" href="DrawableInCameraCoordinates_8h.html">
+      </topic>
+      <topic label="Engine.h" href="Engine_8h.html">
+      </topic>
+      <topic label="Exception.h" href="Exception_8h.html">
+        <topic label="RaiseException" href="Exception_8h.html#ab842802fe636a4845c79236c3132fbd9"/>
+      </topic>
+      <topic label="Face.h" href="Face_8h.html">
+      </topic>
+      <topic label="FaceDepthAccessor.h" href="FaceDepthAccessor_8h.html">
+      </topic>
+      <topic label="FastMath.h" href="FastMath_8h.html">
+        <topic label="StaticInitializer" href="classFastMath_1_1StaticInitializer.html">
+          <topic label="StaticInitializer" href="classFastMath_1_1StaticInitializer.html#ae55caa004e04274d72a66b7280b39ad0"/>
+        </topic>
+        <topic label="PI" href="FastMath_8h.html#ga598a3330b3c21701223ee0ca14316eca"/>
+      </topic>
+      <topic label="FrameCounter.h" href="FrameCounter_8h.html">
+      </topic>
+      <topic label="IllegalArgumentException.h" href="IllegalArgumentException_8h.html">
+        <topic label="CheckArgument" href="IllegalArgumentException_8h.html#a6ec3086fb672775484f0333563538a2d"/>
+        <topic label="EnsureNonNegative" href="IllegalArgumentException_8h.html#ac30c7352681027de4750c608ff4d9639"/>
+        <topic label="EnsurePositive" href="IllegalArgumentException_8h.html#a943d9cce4b58a0f884a805ae72e36258"/>
+        <topic label="EnsureValid" href="IllegalArgumentException_8h.html#a14908712345ff367afd5113637846817"/>
+      </topic>
+      <topic label="IndexOutOfBoundsException.h" href="IndexOutOfBoundsException_8h.html">
+        <topic label="CheckBounds_Always" href="IndexOutOfBoundsException_8h.html#abe4013fbba7feebb55b1f2f8df2d03cc"/>
+        <topic label="CheckBounds_Debug" href="IndexOutOfBoundsException_8h.html#abc231c1fc6c2c3254a9a7376cc7c78f4"/>
+      </topic>
+      <topic label="Light.h" href="Light_8h.html">
+      </topic>
+      <topic label="MainFrame.h" href="MainFrame_8h.html">
+      </topic>
+      <topic label="Memory.h" href="Memory_8h.html">
+        <topic label="FASTBASICARRAY" href="Memory_8h.html#ga89bf5dae5bb53c667630da61b60cdfaa"/>
+        <topic label="MemCopy" href="Memory_8h.html#ga64be1ddb1e1a17db8588d56e492f1b5e"/>
+        <topic label="ReallocMemory" href="Memory_8h.html#ga7e4406f237622d8e6027c0998e7fe051"/>
+      </topic>
+      <topic label="MemoryException.h" href="MemoryException_8h.html">
+      </topic>
+      <topic label="Panel3D.h" href="Panel3D_8h.html">
+      </topic>
+      <topic label="Piloter.h" href="Piloter_8h.html">
+      </topic>
+      <topic label="QuickSort.h" href="QuickSort_8h.html">
+        <topic label="Sort" href="QuickSort_8h.html#gaf18916a0da4a35c2deb81deadc38fcb9"/>
+        <topic label="Sort" href="QuickSort_8h.html#gae667f470f5d08eedc25d0ea2dfc4d857"/>
+      </topic>
+      <topic label="Renderable.h" href="Renderable_8h.html">
+      </topic>
+      <topic label="Renderer.h" href="Renderer_8h.html">
+      </topic>
+      <topic label="Rotation.h" href="Rotation_8h.html">
+      </topic>
+      <topic label="ScanLineComputer.h" href="ScanLineComputer_8h.html">
+      </topic>
+      <topic label="wxid.h" href="wxid_8h.html">
+        <topic label="wx_XP" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba591e3b2e4c7a2c0026933e133165e8c5"/>
+        <topic label="wx_XM" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba180292a377d9291661f2aff7f168a5d5"/>
+        <topic label="wx_YP" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba410bc43dd314dd8df0dc5d63ef346514"/>
+        <topic label="wx_YM" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba99ff918c6d47d4f63e6ec8584a0d4f32"/>
+        <topic label="wx_ZP" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba74cfd3a31a3c883de3f3508b879a35a0"/>
+        <topic label="wx_ZM" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba5af0f49ed867210308de7a5df8fd1da7"/>
+        <topic label="wx_CENTER" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba791f7cb23869ebd931d684c72e6b8c80"/>
+        <topic label="wx_AUTOCENTER" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba5652b339b0879417e97cda04ae9c6dc0"/>
+        <topic label="wx_AUTOROTATE" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba1ffe6f0bf2cf5732bac717c9986a9ea4"/>
+        <topic label="wx_ROTATEXP" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55bae2a8b4cdbac1399fff264e294e545c4f"/>
+        <topic label="wx_ROTATEXM" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba7328992cc542562ae0e1a9e952cf1713"/>
+        <topic label="wx_ROTATEYP" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba9f912c35ce16eed6088e57af4b37d510"/>
+        <topic label="wx_ROTATEYM" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba2fe2203cf8ef3c7a0f512f6062d42140"/>
+        <topic label="wx_ROTATEZP" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55baca0d03b7adb7cfa53d07a72ff5669713"/>
+        <topic label="wx_ROTATEZM" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba815da6aa3bbb043ded48e75dfdda5737"/>
+        <topic label="wx_NEXTMODEL" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba83ffbfbb425a7a029ec53e8239736f2b"/>
+        <topic label="wx_NEXTMETHOD" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55bacdd45ca97358a0163f7d312bc2b9b2ad"/>
+        <topic label="wx_KALEIDOSCOPE" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba6f250899b03ecd90c4bdad148a5b31a6"/>
+        <topic label="wx_SAVE" href="wxid_8h.html#gga06fc87d81c62e9abb8790b6e5713c55ba7e0978aa7331c4b7e6c7146722db60b6"/>
+      </topic>
+      <topic label="ZBuffer.h" href="ZBuffer_8h.html">
+      </topic>
+      <topic label="AssertException.cpp" href="AssertException_8cpp.html"/>
+      <topic label="BufferBase.cpp" href="BufferBase_8cpp.html"/>
+      <topic label="Camera.cpp" href="Camera_8cpp.html"/>
+      <topic label="DataComprime.cpp" href="DataComprime_8cpp.html">
+        <topic label="comprime_faceColors" href="DataComprime_8cpp.html#a15e9bdc73de25e665a5373d5e53f6604"/>
+        <topic label="comprime_faces" href="DataComprime_8cpp.html#a8a7270461311ccbf2fbff520f4b118a0"/>
+        <topic label="comprime_nbfaceColors" href="DataComprime_8cpp.html#a35455133b093e260a767283e54897a45"/>
+        <topic label="comprime_nbfaces" href="DataComprime_8cpp.html#a56e0c77e4d0585f0228295c53fbc19ec"/>
+        <topic label="comprime_nbpoints" href="DataComprime_8cpp.html#aaae4f26a15b9fed68d11d864d91981fc"/>
+        <topic label="comprime_points" href="DataComprime_8cpp.html#a0a449e5a7f3abfaa96998edca3201e3c"/>
+      </topic>
+      <topic label="DataDuck.cpp" href="DataDuck_8cpp.html">
+        <topic label="duck_faceColors" href="DataDuck_8cpp.html#adc00a1843a6d37e25f861e40e45e36f0"/>
+        <topic label="duck_faces" href="DataDuck_8cpp.html#a94a2bae44df9a31d26c8fc89e42dec86"/>
+        <topic label="duck_nbfaceColors" href="DataDuck_8cpp.html#a604a141c779d191c934d9706755f845a"/>
+        <topic label="duck_nbfaces" href="DataDuck_8cpp.html#a8ebf6324b260cf77dc1bd2083f1c5b4f"/>
+        <topic label="duck_nbpoints" href="DataDuck_8cpp.html#a649b72f05490203c24af5543bc7409e4"/>
+        <topic label="duck_points" href="DataDuck_8cpp.html#adb62e1cf3c7d357a45d828624c4f7172"/>
+      </topic>
+      <topic label="DataEtoile.cpp" href="DataEtoile_8cpp.html">
+        <topic label="etoile_faceColors" href="DataEtoile_8cpp.html#a50ef93bb1c1e5effdcc342085014b8c0"/>
+        <topic label="etoile_faces" href="DataEtoile_8cpp.html#a3a4812bdecab95661327140d6f32f235"/>
+        <topic label="etoile_nbfaceColors" href="DataEtoile_8cpp.html#a477ba2049c6dbd0e10344bae1d793912"/>
+        <topic label="etoile_nbfaces" href="DataEtoile_8cpp.html#aa556785032d178f96ac326a8a1640bde"/>
+        <topic label="etoile_nbpoints" href="DataEtoile_8cpp.html#a2fae089fa94a1c6aab7c14222057b7be"/>
+        <topic label="etoile_points" href="DataEtoile_8cpp.html#a72d86de3b736c982b60b5faf4c5e96ed"/>
+      </topic>
+      <topic label="DataNoeud.cpp" href="DataNoeud_8cpp.html">
+        <topic label="noeud_faceColors" href="DataNoeud_8cpp.html#a2911045e4678d160ec59f3d50b172f09"/>
+        <topic label="noeud_faces" href="DataNoeud_8cpp.html#a8eaf737331677a958d26e403101c2e97"/>
+        <topic label="noeud_nbfaceColors" href="DataNoeud_8cpp.html#a4f381ba372af845f63f9772474440bbd"/>
+        <topic label="noeud_nbfaces" href="DataNoeud_8cpp.html#a02b12fe701d8ba2405b4eae6f30d1f80"/>
+        <topic label="noeud_nbpoints" href="DataNoeud_8cpp.html#aedb21e3ccdcc588695f0e277ceef8f1c"/>
+        <topic label="noeud_points" href="DataNoeud_8cpp.html#ad0c0c0904f768563488c501010813287"/>
+      </topic>
+      <topic label="DataPolytechLogo.cpp" href="DataPolytechLogo_8cpp.html">
+        <topic label="polytechLogo_faceColors" href="DataPolytechLogo_8cpp.html#a8672840981e0b61c8b5d44ac8b0898b4"/>
+        <topic label="polytechLogo_faces" href="DataPolytechLogo_8cpp.html#a01f1e407f6de791a22ff53cefdbf1396"/>
+        <topic label="polytechLogo_nbfaceColors" href="DataPolytechLogo_8cpp.html#ad7bae915eb61eee2fbadaa7088c51140"/>
+        <topic label="polytechLogo_nbfaces" href="DataPolytechLogo_8cpp.html#a4a07fb6280a1e21ea833e3a6d0745ceb"/>
+        <topic label="polytechLogo_nbpoints" href="DataPolytechLogo_8cpp.html#a68c34ef2de6f3df962510691c5dd6a39"/>
+        <topic label="polytechLogo_points" href="DataPolytechLogo_8cpp.html#ab927197fad4d047d8cdfb5c9eb0aab52"/>
+      </topic>
+      <topic label="DataSphere.cpp" href="DataSphere_8cpp.html">
+        <topic label="sphere_faceColors" href="DataSphere_8cpp.html#adfecff5942ba271a22fc1f7ccdce3657"/>
+        <topic label="sphere_faces" href="DataSphere_8cpp.html#abda3eee5a1357f014098ab4aab14534b"/>
+        <topic label="sphere_nbfaceColors" href="DataSphere_8cpp.html#a26621b7ab0279d21081462b3f92cec9e"/>
+        <topic label="sphere_nbfaces" href="DataSphere_8cpp.html#acd38bbeaae2fd7aa433b3ad41f99cacd"/>
+        <topic label="sphere_nbpoints" href="DataSphere_8cpp.html#a4d0dd83542a2ff1753b03663f1f4586e"/>
+        <topic label="sphere_points" href="DataSphere_8cpp.html#ae38230615f7d867d28d92c2a09ff2e9c"/>
+      </topic>
+      <topic label="DataTeapot.cpp" href="DataTeapot_8cpp.html">
+        <topic label="teapot_faceColors" href="DataTeapot_8cpp.html#adf843ac745b11881ae100fbba8dc180a"/>
+        <topic label="teapot_faces" href="DataTeapot_8cpp.html#a8c15885ef491fae4be593de8c4d62249"/>
+        <topic label="teapot_nbfaceColors" href="DataTeapot_8cpp.html#a9475df1ea0e7a6ad38133205cafef14b"/>
+        <topic label="teapot_nbfaces" href="DataTeapot_8cpp.html#a541c0c40aaa38d61a05d7e4b6977ef19"/>
+        <topic label="teapot_nbpoints" href="DataTeapot_8cpp.html#a3f5dac15db3be5355832432362579027"/>
+        <topic label="teapot_points" href="DataTeapot_8cpp.html#ab8a8ca0838176a587645d20006010363"/>
+      </topic>
+      <topic label="DataTete.cpp" href="DataTete_8cpp.html">
+        <topic label="tete_faceColors" href="DataTete_8cpp.html#a264304d9ad53fc450696ff7976850971"/>
+        <topic label="tete_faces" href="DataTete_8cpp.html#a43ed826d25ad0c0b4f590a1d138482cd"/>
+        <topic label="tete_nbfaceColors" href="DataTete_8cpp.html#ad786fe661cf058a9a7e7bb4458ccbab2"/>
+        <topic label="tete_nbfaces" href="DataTete_8cpp.html#a2f7a8e2b3afc19b78eb08de7d95b579c"/>
+        <topic label="tete_nbpoints" href="DataTete_8cpp.html#a7810f43562531535e1d66f3ee9493bfa"/>
+        <topic label="tete_points" href="DataTete_8cpp.html#a3d1d5062f948700691cf9e40d33fbe35"/>
+      </topic>
+      <topic label="DataTore.cpp" href="DataTore_8cpp.html">
+        <topic label="tore_faceColors" href="DataTore_8cpp.html#ab3b8c542cb06bfdbc65f387dce4607da"/>
+        <topic label="tore_faces" href="DataTore_8cpp.html#a0b737f873e9a6b947bb5feaccce67918"/>
+        <topic label="tore_nbfaceColors" href="DataTore_8cpp.html#afa685fee0608cf427801eebf231f560a"/>
+        <topic label="tore_nbfaces" href="DataTore_8cpp.html#abf43b0078825e94a34bdfadcab36d5b8"/>
+        <topic label="tore_nbpoints" href="DataTore_8cpp.html#ae932c5098bfbe0aa1183beb3fa6c73ca"/>
+        <topic label="tore_points" href="DataTore_8cpp.html#a106bc99a3a9f55a495136ed330263cc7"/>
+      </topic>
+      <topic label="Drawable.cpp" href="Drawable_8cpp.html"/>
+      <topic label="DrawableInCameraCoordinates.cpp" href="DrawableInCameraCoordinates_8cpp.html"/>
+      <topic label="Engine.cpp" href="Engine_8cpp.html"/>
+      <topic label="Exception.cpp" href="Exception_8cpp.html"/>
+      <topic label="FaceDepthAccessor.cpp" href="FaceDepthAccessor_8cpp.html"/>
+      <topic label="FastMath.cpp" href="FastMath_8cpp.html"/>
+      <topic label="FrameCounter.cpp" href="FrameCounter_8cpp.html"/>
+      <topic label="IllegalArgumentException.cpp" href="IllegalArgumentException_8cpp.html"/>
+      <topic label="IndexOutOfBoundsException.cpp" href="IndexOutOfBoundsException_8cpp.html"/>
+      <topic label="MainFrame.cpp" href="MainFrame_8cpp.html"/>
+      <topic label="Memory.cpp" href="Memory_8cpp.html"/>
+      <topic label="MemoryException.cpp" href="MemoryException_8cpp.html"/>
+      <topic label="Panel3D.cpp" href="Panel3D_8cpp.html"/>
+      <topic label="Piloter.cpp" href="Piloter_8cpp.html"/>
+      <topic label="Renderable.cpp" href="Renderable_8cpp.html"/>
+      <topic label="RendererBase.cpp" href="RendererBase_8cpp.html"/>
+      <topic label="ScanLineComputerBase.cpp" href="ScanLineComputerBase_8cpp.html"/>
+      <topic label="ZBufferBase.cpp" href="ZBufferBase_8cpp.html"/>
+      <topic label="App.cpp" href="App_8cpp.html">
+        <topic label="IMPLEMENT_APP" href="App_8cpp.html#a094c4912efc3d38b028e2dd8ed76d73d"/>
+        <topic label="StudentsNames" href="App_8cpp.html#a2810180e063c97949ad2627f765cdbeb"/>
+      </topic>
+      <topic label="Buffer.cpp" href="Buffer_8cpp.html"/>
+      <topic label="Renderer.cpp" href="Renderer_8cpp.html"/>
+      <topic label="ScanLineComputer.cpp" href="ScanLineComputer_8cpp.html"/>
+      <topic label="ZBuffer.cpp" href="ZBuffer_8cpp.html"/>
+    </topic>
+    <topic label="Globals" href="globals.html">
+      <topic label="All" href="globals.html"/>
+      <topic label="Functions" href="globals_func.html"/>
+      <topic label="Variables" href="globals_vars.html"/>
+      <topic label="Enumerator" href="globals_eval.html"/>
+      <topic label="Macros" href="globals_defs.html"/>
+    </topic>
+  </topic>
+</toc>
