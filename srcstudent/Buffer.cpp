@@ -5,19 +5,22 @@
 void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const Color c2)
 {
     int x, y, longx, longy;
+    double const2;
+    double const1;
+    double critere;
+    int incx;
+    int incy;
+    double wA;
+
+    double distanceP1P2 = p1.Distance(p2);
+
+    Color c3(255, 0, 0);
 
     longx = p2.x - p1.x;
     longy = p2.y - p1.y;
 
     x = p1.x;
     y = p1.y;
-
-    double const2;
-    double const1;
-    double critere;
-
-    int incx;
-    int incy;
 
     if(longx >= 0) {
         incx = 1;
@@ -40,11 +43,9 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
 
         for(int i = 1; i< longx; i++) {
             //Calcul de la couleur
-            Coord2D coordP(x,y);
-            double distP1 = coordP.Distance(p1);
-            double distP2 = coordP.Distance(p2);
+            wA = 1 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
+            SetPoint(Coord2D(x, y), c1 * wA + c3 * (1 - wA));
 
-            SetPoint(Coord2D(x, y), c1);
             if(critere > 0) {
                 y = y + incy;
                 critere = critere + const1;
@@ -61,7 +62,9 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
         critere = const2- longy;
 
         for(int i = 1; i < longy; i++) {
-            SetPoint(Coord2D(x, y), c1);
+            wA = 1 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
+            SetPoint(Coord2D(x, y), c1 * wA + c3 * (1 - wA));
+
             if(critere > 0) {
                 x = x + incx;
                 critere = critere+const1;
