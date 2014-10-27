@@ -14,8 +14,6 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
 
     double distanceP1P2 = p1.Distance(p2);
 
-    Color c3(255, 0, 0);
-
     longx = p2.x - p1.x;
     longy = p2.y - p1.y;
 
@@ -44,7 +42,7 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
         for(int i = 1; i< longx; i++) {
             //Calcul de la couleur
             wA = 1 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
-            SetPoint(Coord2D(x, y), c1 * wA + c3 * (1 - wA));
+            SetPoint(Coord2D(x, y), c1 * wA + c2 * (1 - wA));
 
             if(critere > 0) {
                 y = y + incy;
@@ -63,7 +61,7 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
 
         for(int i = 1; i < longy; i++) {
             wA = 1 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
-            SetPoint(Coord2D(x, y), c1 * wA + c3 * (1 - wA));
+            SetPoint(Coord2D(x, y), c1 * wA + c2 * (1 - wA));
 
             if(critere > 0) {
                 x = x + incx;
