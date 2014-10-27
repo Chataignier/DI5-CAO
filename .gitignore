@@ -5,3 +5,4 @@ make/*
 src/*
 debug/*
 project.cbp
+project.layout
