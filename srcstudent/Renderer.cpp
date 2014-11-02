@@ -3,7 +3,7 @@
 #include <Engine.h>
 
 void Renderer::DrawFilaire() {
-	Color color(255, 255, 255);
+    Color color(255, 255, 255);
     Face * currentFace;
 
     for(int face = 0; face < drawable->faces.size; ++face){
@@ -31,9 +31,34 @@ void Renderer::DrawFilaire() {
     }
 
 }
-void Renderer::DrawFilaireCache()
-{
-	// compléter ici
+void Renderer::DrawFilaireCache() {
+    Color color(255, 255, 255);
+    Face * currentFace;
+
+    for(int face = 0; face < effectiveDrawable->sortedVisibleFaces.size; ++face){
+        currentFace = &drawable->faces.data[effectiveDrawable->sortedVisibleFaces.data[face].index];
+
+        unsigned int indexFace[3] = {currentFace->index1,
+                                     currentFace->index2,
+                                     currentFace->index3};
+
+        for(int point = 0; point < 3; ++point){
+            if(!drawable->colorOnFace){
+                buffer->DrawLine(
+                             renderable.points2D.data[indexFace[point]],
+                             renderable.points2D.data[indexFace[(point + 1) % 3]],
+                             drawable->pointColors.data[indexFace[point]],
+                             drawable->pointColors.data[indexFace[(point + 1) % 3]]);
+            } else {
+                buffer->DrawLine(
+                             renderable.points2D.data[indexFace[point]],
+                             renderable.points2D.data[indexFace[(point + 1) % 3]],
+                             color,
+                             color);
+            }
+        }
+    }
+
 }
 void Renderer::DrawFacePleine()
 {
