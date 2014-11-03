@@ -41,9 +41,7 @@ void ScanLineComputer::AddEdge(const Coord2D p1, const Coord2D p2,
         const2 = 2*longy;
         critere = const2 - longx;
 
-        for(int i = 0; i <= longx && x >= 0 && x <= width && y >= 0 && y <= height; i++) {
-            AddPoint(x, y, p1, p2, index1, index2);
-
+        for(int i = 1; i < longx; i++) {
             if(critere > 0) {
                 y = y + incy;
                 critere = critere + const1;
@@ -52,23 +50,42 @@ void ScanLineComputer::AddEdge(const Coord2D p1, const Coord2D p2,
             }
 
             x = x + incx;
+
+            if(x < 0){
+                x = 0;
+            } else if(x > width){
+                x = width;
+            }
+
+            if(y >= 0 && y < height){
+                AddPoint(x, y, p1, p2, index1, index2);
+            }
         }
     } else {
         const1 = 2*(longx - longy);
         const2 = 2*longx;
         critere = const2 - longy;
 
-        for(int i = 0; i <= longy && x >= 0 && x <= width && y >= 0 && y <= height; i++) {
-            AddPoint(x, y, p1, p2, index1, index2);
+        for(int i = 1; i < longy; i++) {
 
             if(critere > 0) {
                 x = x + incx;
-                critere = critere+const1;
-            }else{
+                critere = critere + const1;
+            } else{
                 critere = critere + const2;
             }
 
             y = y+incy;
+
+            if(x < 0){
+                x = 0;
+            } else if(x > width){
+                x = width;
+            }
+
+            if(y >= 0 && y < height){
+                AddPoint(x, y, p1, p2, index1, index2);
+            }
         }
     }
 }

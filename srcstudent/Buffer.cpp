@@ -77,16 +77,21 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
 {
     scanLineComputer.Init();
     scanLineComputer.Compute(p1, p2, p3);
+    int x1, x2;
 
-    DrawLine(p1, p2, c1, c2);
-    DrawLine(p1, p3, c1, c3);
-    DrawLine(p2, p3, c2, c3);
+    DrawLine(p1,p2,c1,c2);
+    DrawLine(p1,p3,c1,c3);
+    DrawLine(p2,p3,c2,c3);
 
-    for(int y = scanLineComputer.ymin; y < scanLineComputer.ymax; ++y){
-        DrawLine(Coord2D(scanLineComputer.left.data[y], y),
-                 Coord2D(scanLineComputer.right.data[y], y),
+    for(int y = scanLineComputer.ymin; y <= scanLineComputer.ymax; ++y){
+
+        x1 = scanLineComputer.left.data[y];
+        x2 = scanLineComputer.right.data[y];
+
+        DrawLine(Coord2D(x1, y),
+                 Coord2D(x2, y),
                  c1,
-                 c1);
+                 c2);
     }
 }
 
