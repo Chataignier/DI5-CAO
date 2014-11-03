@@ -30,6 +30,7 @@ void Renderer::DrawFilaire() {
     }
 
 }
+
 void Renderer::DrawFilaireCache() {
     Face * currentFace;
 
@@ -56,11 +57,32 @@ void Renderer::DrawFilaireCache() {
             }
         }
     }
-
 }
-void Renderer::DrawFacePleine()
-{
-	// compléter ici
+
+void Renderer::DrawFacePleine() {
+	Face * currentFace;
+	int indexFace;
+
+    for(int face = 0; face < effectiveDrawable->sortedVisibleFaces.size; ++face){
+        indexFace = effectiveDrawable->sortedVisibleFaces.data[face].index;
+        currentFace = &drawable->faces.data[indexFace];
+
+        if(!drawable->colorOnFace){
+            buffer->DrawFilledTriangle(renderable.points2D.data[currentFace->index1],
+                                   renderable.points2D.data[currentFace->index2],
+                                   renderable.points2D.data[currentFace->index3],
+                                   drawable->pointColors.data[currentFace->index1],
+                                   drawable->pointColors.data[currentFace->index2],
+                                   drawable->pointColors.data[currentFace->index3]);
+        } else {
+            buffer->DrawFilledTriangle(renderable.points2D.data[currentFace->index1],
+                                   renderable.points2D.data[currentFace->index2],
+                                   renderable.points2D.data[currentFace->index3],
+                                   drawable->faceColors.data[indexFace],
+                                   drawable->faceColors.data[indexFace],
+                                   drawable->faceColors.data[indexFace]);
+        }
+    }
 }
 
 void Renderer::DrawLambert()

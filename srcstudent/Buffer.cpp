@@ -1,7 +1,6 @@
 #include <Buffer.h>
 #include <FastMath.h>
 
-
 void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const Color c2)
 {
     int x, y, longx, longy;
@@ -53,8 +52,7 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
 
             x = x + incx;
         }
-
-    }else{
+    } else {
         const1 = 2*(longx - longy);
         const2 = 2*longx;
         critere = const2- longy;
@@ -72,15 +70,24 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
             y = y+incy;
         }
     }
-
-    // Il faut dessiner une ligne entre le point p1 et p2 en appliquant les couleurs progressivements
-	// compléter ici
 }
 
 void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
 		const Coord2D p3, const Color c1, const Color c2, const Color c3)
 {
-	// completer ici
+    scanLineComputer.Init();
+    scanLineComputer.Compute(p1, p2, p3);
+
+    DrawLine(p1, p2, c1, c2);
+    DrawLine(p1, p3, c1, c3);
+    DrawLine(p2, p3, c2, c3);
+
+    for(int y = scanLineComputer.ymin; y < scanLineComputer.ymax; ++y){
+        DrawLine(Coord2D(scanLineComputer.left.data[y], y),
+                 Coord2D(scanLineComputer.right.data[y], y),
+                 c1,
+                 c1);
+    }
 }
 
 void Buffer::DrawPhongTriangle(const Coord2D p1, const Coord2D p2,
