@@ -38,7 +38,7 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
         const2 = 2*longy;
         critere = const2 - longx;
 
-        for(int i = 1; i< longx; i++) {
+        for(int i = 1; i<= longx; i++) {
             //Calcul de la couleur
             wA = 1 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
             SetPoint(Coord2D(x, y), c1 * wA + c2 * (1 - wA));
@@ -57,7 +57,7 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
         const2 = 2*longx;
         critere = const2- longy;
 
-        for(int i = 1; i < longy; i++) {
+        for(int i = 1; i <= longy; i++) {
             wA = 1 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
             SetPoint(Coord2D(x, y), c1 * wA + c2 * (1 - wA));
 
@@ -83,7 +83,7 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
     DrawLine(p1,p3,c1,c3);
     DrawLine(p2,p3,c2,c3);
 
-    for(int y = scanLineComputer.ymin; y <= scanLineComputer.ymax; ++y){
+    for(int y = scanLineComputer.ymin; y < scanLineComputer.ymax; ++y){
 
         x1 = scanLineComputer.left.data[y];
         x2 = scanLineComputer.right.data[y];
