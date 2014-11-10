@@ -83,15 +83,18 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
     DrawLine(p1,p3,c1,c3);
     DrawLine(p2,p3,c2,c3);
 
-    for(int y = scanLineComputer.ymin; y < scanLineComputer.ymax; ++y){
+    for(int y = scanLineComputer.ymin; y <= scanLineComputer.ymax; ++y){
 
         x1 = scanLineComputer.left.data[y];
         x2 = scanLineComputer.right.data[y];
 
+        Array<double> * leftWeight = &scanLineComputer.leftweight.data[y];
+        Array<double> * rightWeight = &scanLineComputer.rightweight.data[y];
+
         DrawLine(Coord2D(x1, y),
                  Coord2D(x2, y),
-                 c1,
-                 c2);
+                 (c1*leftWeight->data[0] + c2*leftWeight->data[1] + c3*leftWeight->data[2])*(1/(leftWeight->data[0]+leftWeight->data[1]+leftWeight->data[2])),
+                 (c1*rightWeight->data[0] + c2*rightWeight->data[1] + c3*rightWeight->data[2])*(1/(rightWeight->data[0]+rightWeight->data[1]+rightWeight->data[2])));
     }
 }
 

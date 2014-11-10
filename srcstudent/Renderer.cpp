@@ -5,18 +5,22 @@
 void Renderer::DrawFilaire() {
     Face * currentFace;
 
+    // Pour chacune des faces de la formes à représenter
     for(int face = 0; face < drawable->faces.size; ++face){
+        // On récupère la face courante
         currentFace = &drawable->faces.data[face];
 
+        // On récupère les indices des trois points du triangles dans la grande liste de points
         unsigned int indexFace[3] = {currentFace->index1,
                                      currentFace->index2,
                                      currentFace->index3};
 
+        // Pour chacun des côtés du triangle
         for(int point = 0; point < 3; ++point){
-            if(!drawable->colorOnFace){
+            if(!drawable->colorOnFace){ // Si la couleur est sur les points
                 buffer->DrawLine(
-                             renderable.points2D.data[indexFace[point]],
-                             renderable.points2D.data[indexFace[(point + 1) % 3]],
+                             renderable.points2D.data[indexFace[point]], // Le point courant
+                             renderable.points2D.data[indexFace[(point + 1) % 3]], // Le suivant
                              drawable->pointColors.data[indexFace[point]],
                              drawable->pointColors.data[indexFace[(point + 1) % 3]]);
             } else {
@@ -34,9 +38,13 @@ void Renderer::DrawFilaire() {
 void Renderer::DrawFilaireCache() {
     Face * currentFace;
 
+    // Pour chacune des faces
     for(int face = 0; face < effectiveDrawable->sortedVisibleFaces.size; ++face){
+
+        // On rcupère l'index de la face
         currentFace = &drawable->faces.data[effectiveDrawable->sortedVisibleFaces.data[face].index];
 
+        // On effectue la même chose que pour la méthode précédente
         unsigned int indexFace[3] = {currentFace->index1,
                                      currentFace->index2,
                                      currentFace->index3};
@@ -62,6 +70,8 @@ void Renderer::DrawFilaireCache() {
 void Renderer::DrawFacePleine() {
 	Face * currentFace;
 	int indexFace;
+
+    // On effectue la même chose que dans la méthode précédente sauf qu'on appelle la méthode drawFilled triangle sur la face courante
 
     for(int face = 0; face < effectiveDrawable->sortedVisibleFaces.size; ++face){
         indexFace = effectiveDrawable->sortedVisibleFaces.data[face].index;
