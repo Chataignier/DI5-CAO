@@ -70,7 +70,6 @@ void Renderer::DrawFilaireCache() {
 void Renderer::DrawFacePleine() {
 	Face * currentFace;
 	int indexFace;
-
     // On effectue la même chose que dans la méthode précédente sauf qu'on appelle la méthode drawFilled triangle sur la face courante
 
     for(int face = 0; face < effectiveDrawable->sortedVisibleFaces.size; ++face){
@@ -97,7 +96,47 @@ void Renderer::DrawFacePleine() {
 
 void Renderer::DrawLambert()
 {
-	// compléter ici
+    Face * currentFace;
+    int indexFace;
+    Coord3D * currentNormal;
+
+    for(int face = 0; face < effectiveDrawable->sortedVisibleFaces.size; ++face){
+        //Index de la liste des faces visibles
+        indexFace = effectiveDrawable->sortedVisibleFaces.data[face].index;
+
+        //La face visible
+        currentFace = &drawable->faces.data[indexFace];
+
+        //On calcul le point central de la face
+        Coord3D * p1 = &effectiveDrawable->points.data[currentFace->index1];
+        Coord3D * p2 = &effectiveDrawable->points.data[currentFace->index2];
+        Coord3D * p3 = &effectiveDrawable->points.data[currentFace->index3];
+
+        Coord3D meanPoint((p1->x + p2->x + p3->x)/3, (p1->y + p2->y + p3->y)/3, (p1->z + p2->z + p3->z)/3);
+
+        //Calcul de la couleur de la face par rapport a l'eclairage
+        Color c = pointLight.GetColor(meanPoint, effectiveDrawable->faceNormals.data[indexFace]) + ambientLight.ambientColor;
+
+         if(!drawable->colorOnFace){
+                //Mode kaleidoscope
+                buffer->DrawFilledTriangle(renderable.points2D.data[currentFace->index1],
+                                   renderable.points2D.data[currentFace->index2],
+                                   renderable.points2D.data[currentFace->index3],
+                                   c * drawable->pointColors.data[currentFace->index1],
+                                   c * drawable->pointColors.data[currentFace->index2],
+                                   c * drawable->pointColors.data[currentFace->index3]);
+
+         } else {
+            c = drawable->faceColors.data[indexFace] * c;
+
+            buffer->DrawFilledTriangle(renderable.points2D.data[currentFace->index1],
+                                   renderable.points2D.data[currentFace->index2],
+                                   renderable.points2D.data[currentFace->index3],
+                                   c,
+                                   c,
+                                   c);
+         }
+    }
 }
 void Renderer::DrawGouraud()
 {
