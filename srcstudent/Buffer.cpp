@@ -113,6 +113,49 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
                                const AmbientLight & ambientLight,
                                const PointLight & pointLight)
 {
-	// compléter ici
+    Color colors[3] = {c1, c2, c3};
+    Coord3D positions3D[3] = {posi1, posi2, posi3};
+    Coord3D normals[3] = {normal1, normal2, normal3};
+    Coord2D leftPoint, rightPoint;
+    Coord3D leftPosition, rightPosition;
+
+    scanLineComputer.Init();
+    scanLineComputer.Compute(p1, p2, p3);
+
+    for(int y = scanLineComputer.ymin; y <= scanLineComputer.ymax; ++y){
+        Coord3D normalLeft, normalRight;
+        Color colorLeft, colorRight;
+        double distanceRightLeft;
+
+        leftPoint.y = rightPoint.y = y;
+        leftPoint.x = scanLineComputer.left.data[y];
+        rightPoint.x = scanLineComputer.right.data[y];
+
+        distanceRightLeft = leftPoint.Distance(rightPoint);
+
+        for(int i = 0; i < 3; ++i){
+            double currentLeftWeight = scanLineComputer.leftweight.data[y].data[i];
+            double currentRightWeight = scanLineComputer.rightweight.data[y].data[i];
+
+            colorRight = colorRight + (colors[i] * currentRightWeight);
+            normalRight += normals[i] * currentRightWeight;
+            rightPosition += positions3D[i] * currentRightWeight;
+            normalLeft += normals[i] * currentLeftWeight;
+            colorLeft = colorLeft + colors[i] * currentLeftWeight;
+            leftPosition += positions3D[i] * currentLeftWeight;
+        }
+
+        for(int x = leftPoint.x; x <= rightPoint.x; ++x){
+            Coord2D currentPoint(x, y);
+            double distanceLeftCurrent = leftPoint.Distance(currentPoint);
+            double w1 = 1 - (distanceLeftCurrent / distanceRightLeft), w2 = 1 - w1;
+
+            SetPoint(currentPoint,
+                     (colorLeft * w1 + colorRight * w2) *
+                     (ambientLight.ambientColor + pointLight.GetColor(
+                                                         (leftPosition * w1) + (rightPosition * w2),
+                                                         (normalLeft * w1) + (normalRight * w2))));
+        }
+    }
 }
 
