@@ -21,7 +21,7 @@ bool App::OnInit()
 	setlocale(LC_NUMERIC, "C");
 
 	// on crée la fenêtre principale
-	MainFrame * mf = new MainFrame(false);
+	MainFrame * mf = new MainFrame(true);
 	// on affiche la fenêtre principale
 	mf->Show();
 	// on retourne true pour indiquer que tout c'est bien déroulé

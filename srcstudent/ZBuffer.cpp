@@ -20,11 +20,18 @@ bool ZBuffer::ReplaceCurrent(const Coord2D p)
 {
     if(enabled) {
         //On vérifie si l'on sort de notre liste de liste depths
-        if(p.y >= 0 && p.x >= 0 && p.x < depths.size && p.y < depths.data[p.x].size) {
+        if(p.y < depths.size && p.x < depths.data[p.y].size) {
             //On verifie sur le point est plus proche
-            return (depths.data[p.x].data[p.y] > p.depth);
+            if(depths.data[p.y].data[p.x] >= p.depth){
+                depths.data[p.y].data[p.x] = p.depth;
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
         }
     }
-    return true;
 
+    return true;
 }
