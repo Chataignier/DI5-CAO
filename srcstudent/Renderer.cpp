@@ -192,9 +192,9 @@ void Renderer::DrawPhong()
             c2 = drawable->pointColors.data[currentFace->index2] * c2;
             c3 = drawable->pointColors.data[currentFace->index3] * c3;
 
-            buffer->SetPoint(renderable.points2D.data[currentFace->index1], c1);
-            buffer->SetPoint(renderable.points2D.data[currentFace->index2], c2);
-            buffer->SetPoint(renderable.points2D.data[currentFace->index3], c3);
+            //buffer->SetPoint(renderable.points2D.data[currentFace->index1], c1);
+            //buffer->SetPoint(renderable.points2D.data[currentFace->index2], c2);
+            //buffer->SetPoint(renderable.points2D.data[currentFace->index3], c3);
 
             buffer->DrawPhongTriangle(renderable.points2D.data[currentFace->index1],
                                    renderable.points2D.data[currentFace->index2],
@@ -212,9 +212,9 @@ void Renderer::DrawPhong()
                                    pointLight
                                    );
         } else {
-            c1 = drawable->faceColors.data[indexFace] * c1;
-            c2 = drawable->faceColors.data[indexFace] * c2;
-            c3 = drawable->faceColors.data[indexFace] * c3;
+            //c1 = drawable->faceColors.data[indexFace] * c1;
+            //c2 = drawable->faceColors.data[indexFace] * c2;
+            //c3 = drawable->faceColors.data[indexFace] * c3;
 
             buffer->SetPoint(renderable.points2D.data[currentFace->index1], c1);
             buffer->SetPoint(renderable.points2D.data[currentFace->index2], c2);

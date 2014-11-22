@@ -18,8 +18,6 @@ void ZBuffer::Init()
 	 * i.e. si p est plus proche de la caméra que le même pixel mais de profondeur depths[x][y]. */
 bool ZBuffer::ReplaceCurrent(const Coord2D p)
 {
-    // Attention ! La première composante de depths représente les y et la seconde les x
-
     if(enabled) {
         //On vérifie si l'on sort de notre liste de liste depths
         if(p.y < depths.size && p.x < depths.data[p.y].size) {
@@ -34,6 +32,5 @@ bool ZBuffer::ReplaceCurrent(const Coord2D p)
             return false;
         }
     }
-
     return true;
 }

@@ -122,7 +122,7 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
     scanLineComputer.Init();
     scanLineComputer.Compute(p1, p2, p3);
 
-    for(int y = scanLineComputer.ymin; y < scanLineComputer.ymax; ++y){
+    for(int y = scanLineComputer.ymin; y <= scanLineComputer.ymax; ++y){
         Coord3D normalLeft, normalRight;
         Color colorLeft, colorRight;
         Coord3D positionLeft, positionRight;
@@ -157,54 +157,4 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
                                                          (normalLeft * w1) + (normalRight * w2))));
         }
     }
-}/*
-
-void Buffer::DrawPhongTriangle(const Coord2D p1, const Coord2D p2,
-const Coord2D p3, const Color c1, const Color c2, const Color c3,
-const Coord3D posi1, const Coord3D posi2, const Coord3D posi3,
-const Coord3D normal1, const Coord3D normal2, const Coord3D normal3,
-const AmbientLight & ambientLight, const PointLight & pointLight)
-{
-scanLineComputer.Init();
-scanLineComputer.Compute( p1, p2, p3 );
-Color colorLeft, colorRight;
-Coord3D current3D, leftPosi, rightPosi, normalLeft, normalRight;
-// Parcours de chaque ligne
-for( int i = scanLineComputer.ymin; i < scanLineComputer.ymax; ++i )
-{
-Coord2D pointLeft(scanLineComputer.left.data[i], i);
-Coord2D pointRight(scanLineComputer.right.data[i], i);
-double distance = pointLeft.Distance(pointRight);
-normalLeft = normal1 * scanLineComputer.leftweight.data[i].data[0] +
-normal2 * scanLineComputer.leftweight.data[i].data[1] +
-normal3 * scanLineComputer.leftweight.data[i].data[2];
-normalRight = normal1 * scanLineComputer.rightweight.data[i].data[0] +
-normal2 * scanLineComputer.rightweight.data[i].data[1] +
-normal3 * scanLineComputer.rightweight.data[i].data[2];
-colorLeft = c1 * scanLineComputer.leftweight.data[i].data[0] +
-c2 * scanLineComputer.leftweight.data[i].data[1] +
-c3 * scanLineComputer.leftweight.data[i].data[2];
-colorRight = c1 * scanLineComputer.rightweight.data[i].data[0] +
-c2 * scanLineComputer.rightweight.data[i].data[1] +
-c3 * scanLineComputer.rightweight.data[i].data[2];
-leftPosi = posi1 * scanLineComputer.leftweight.data[i].data[0] +
-posi2 * scanLineComputer.leftweight.data[i].data[1] +
-posi3 * scanLineComputer.leftweight.data[i].data[2];
-rightPosi = posi1 * scanLineComputer.rightweight.data[i].data[0] +
-posi2 * scanLineComputer.rightweight.data[i].data[1] +
-posi3 * scanLineComputer.rightweight.data[i].data[2];
-// Parcours et dessin de tous les points sur la ligne courante
-for(int j = scanLineComputer.left.data[i]; j <= scanLineComputer.right.data[i]; ++j)
-{
-Coord2D current2D(j, i);
-double w1 = 1.0 - (pointLeft.Distance(current2D) / distance);
-double w2 = 1.0 - w1;
-Coord3D posiCurrent = leftPosi * w1 + rightPosi * w2;
-Coord3D normalCurrent = normalLeft * w1 + normalRight * w2;
-Color diffuseColor = pointLight.GetColor(posiCurrent, normalCurrent);
-Color pointColor = colorLeft * w1 + colorRight * w2;
-SetPoint(current2D, (ambientLight.ambientColor + diffuseColor) * pointColor);
 }
-}
-}
-*/
