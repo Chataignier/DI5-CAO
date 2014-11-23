@@ -11,6 +11,8 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
     int incy;
     double wA;
 
+    // Mise en place de l'algorithme de Bresenham
+
     double distanceP1P2 = p1.Distance(p2);
 
     longx = p2.x - p1.x;
@@ -83,10 +85,12 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
     scanLineComputer.Compute(p1, p2, p3);
     int x1, x2;
 
+    // On dessine les bords du triangle
     DrawLine(p2, p1, c2, c1);
     DrawLine(p1, p3, c1, c3);
     DrawLine(p3, p2, c3, c2);
 
+    // On parcourt la face de bas en haut
     for(int y = scanLineComputer.ymin; y <= scanLineComputer.ymax; ++y){
 
         x1 = scanLineComputer.left.data[y];
@@ -95,6 +99,7 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
         Array<double> * leftWeight = &scanLineComputer.leftweight.data[y];
         Array<double> * rightWeight = &scanLineComputer.rightweight.data[y];
 
+        // On dessine la ligne courante
         DrawLine(Coord2D(x1, y, p1.depth*leftWeight->data[0] + p2.depth*leftWeight->data[1] + p3.depth*leftWeight->data[2]),
                  Coord2D(x2, y, p1.depth*rightWeight->data[0] + p2.depth*rightWeight->data[1] + p3.depth*rightWeight->data[2]),
                  (c1*leftWeight->data[0] + c2*leftWeight->data[1] + c3*leftWeight->data[2])*(1/(leftWeight->data[0]+leftWeight->data[1]+leftWeight->data[2])),
@@ -127,6 +132,7 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
     scanLineComputer.Init();
     scanLineComputer.Compute(p1, p2, p3);
 
+    // On parcourt la face de bas en haut
     for(int y = scanLineComputer.ymin; y <= scanLineComputer.ymax; ++y){
         Coord3D normalLeft, normalRight;
         Color colorLeft, colorRight;
@@ -140,30 +146,39 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
 
         distanceRightLeft = pointLeft.Distance(pointRight);
 
-        for(int i = 0; i < 3; ++i){
-            double currentLeftWeight = scanLineComputer.leftweight.data[y].data[i];
-            double currentRightWeight = scanLineComputer.rightweight.data[y].data[i];
+        // Si nous ne sommes pas su un unique point
+        if(distanceRightLeft > 0){
 
-            colorRight = colorRight + (colors[i] * currentRightWeight);
-            colorLeft = colorLeft + (colors[i] * currentLeftWeight);
-            normalRight = normalRight + (normals[i] * currentRightWeight);
-            normalLeft = normalLeft + (normals[i] * currentLeftWeight);
-            positionRight = positionRight + (positions3D[i] * currentRightWeight);
-            positionLeft = positionLeft + (positions3D[i] * currentLeftWeight);
-            depthRight += depths[i] * currentRightWeight;
-            depthLeft += depths[i] * currentLeftWeight;
-        }
+            // Réalisation de toutes les interpolations
+            for(int i = 0; i < 3; ++i){
+                double currentLeftWeight = scanLineComputer.leftweight.data[y].data[i];
+                double currentRightWeight = scanLineComputer.rightweight.data[y].data[i];
 
-        for(int x = pointLeft.x; x <= pointRight.x; ++x){
-            Coord2D currentPoint(x, y);
-            double w1 = 1 - (pointLeft.Distance(currentPoint) / distanceRightLeft), w2 = 1 - w1;
-            currentPoint.depth = depthLeft * w1 + depthRight * w2;
+                colorRight = colorRight + (colors[i] * currentRightWeight);
+                colorLeft = colorLeft + (colors[i] * currentLeftWeight);
+                normalRight = normalRight + (normals[i] * currentRightWeight);
+                normalLeft = normalLeft + (normals[i] * currentLeftWeight);
+                positionRight = positionRight + (positions3D[i] * currentRightWeight);
+                positionLeft = positionLeft + (positions3D[i] * currentLeftWeight);
+                depthRight += depths[i] * currentRightWeight;
+                depthLeft += depths[i] * currentLeftWeight;
+            }
 
-            SetPoint(currentPoint,
-                     (colorLeft * w1 + colorRight * w2) *
-                     (ambientLight.ambientColor + pointLight.GetColor(
-                                                         (positionLeft * w1) + (positionRight * w2),
-                                                         (normalLeft * w1) + (normalRight * w2))));
+            // Pour chacun des points du segments
+            for(int x = pointLeft.x; x <= pointRight.x; ++x){
+
+                // Interpolation
+                Coord2D currentPoint(x, y);
+                double w1 = 1 - (pointLeft.Distance(currentPoint) / distanceRightLeft), w2 = 1 - w1;
+                currentPoint.depth = depthLeft * w1 + depthRight * w2;
+
+                // Affichage du point
+                SetPoint(currentPoint,
+                         (colorLeft * w1 + colorRight * w2) *
+                         (ambientLight.ambientColor + pointLight.GetColor(
+                                                             (positionLeft * w1) + (positionRight * w2),
+                                                             (normalLeft * w1) + (normalRight * w2))));
+            }
         }
     }
 }

@@ -16,6 +16,8 @@ void ScanLineComputer::AddEdge(const Coord2D p1, const Coord2D p2,
     int incx;
     int incy;
 
+    // Réutilisation de l'algorithme de Bresenham
+
     longx = p2.x - p1.x;
     longy = p2.y - p1.y;
 
@@ -42,7 +44,7 @@ void ScanLineComputer::AddEdge(const Coord2D p1, const Coord2D p2,
         critere = const2 - longx;
 
         for(int i = 1; i <= longx; i++) {
-            if(y >= 0 && y < height){
+            if(y >= 0 && y < height){ // Si on ne sort pas de l'écran
                 AddPoint(x, y, p1, p2, index1, index2);
             }
 
