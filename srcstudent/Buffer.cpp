@@ -40,8 +40,10 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
 
         for(int i = 1; i<= longx; i++) {
             //Calcul de la couleur
-            wA = 1.0 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
-            SetPoint(Coord2D(x, y), c1 * wA + c2 * (1.0 - wA));
+            Coord2D currentPoint(x,y);
+            wA = 1.0 - p1.Distance(currentPoint) / distanceP1P2;
+            currentPoint.depth = p1.depth * wA + p2.depth * (1.0 - wA);
+            SetPoint(currentPoint, c1 * wA + c2 * (1.0 - wA));
 
             if(critere > 0) {
                 y = y + incy;
@@ -58,8 +60,10 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1, const 
         critere = const2- longy;
 
         for(int i = 1; i <= longy; i++) {
-            wA = 1.0 - p1.Distance(Coord2D(x,y)) / distanceP1P2;
-            SetPoint(Coord2D(x, y), c1 * wA + c2 * (1.0 - wA));
+            Coord2D currentPoint(x,y);
+            wA = 1.0 - p1.Distance(currentPoint) / distanceP1P2;
+            currentPoint.depth = p1.depth * wA + p2.depth * (1.0 - wA);
+            SetPoint(currentPoint, c1 * wA + c2 * (1.0 - wA));
 
             if(critere > 0) {
                 x = x + incx;
@@ -91,8 +95,8 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
         Array<double> * leftWeight = &scanLineComputer.leftweight.data[y];
         Array<double> * rightWeight = &scanLineComputer.rightweight.data[y];
 
-        DrawLine(Coord2D(x1, y),
-                 Coord2D(x2, y),
+        DrawLine(Coord2D(x1, y, p1.depth*leftWeight->data[0] + p2.depth*leftWeight->data[1] + p3.depth*leftWeight->data[2]),
+                 Coord2D(x2, y, p1.depth*rightWeight->data[0] + p2.depth*rightWeight->data[1] + p3.depth*rightWeight->data[2]),
                  (c1*leftWeight->data[0] + c2*leftWeight->data[1] + c3*leftWeight->data[2])*(1/(leftWeight->data[0]+leftWeight->data[1]+leftWeight->data[2])),
                  (c1*rightWeight->data[0] + c2*rightWeight->data[1] + c3*rightWeight->data[2])*(1/(rightWeight->data[0]+rightWeight->data[1]+rightWeight->data[2])));
     }
@@ -117,6 +121,7 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
     Color colors[3] = {c1, c2, c3};
     Coord3D positions3D[3] = {posi1, posi2, posi3};
     Coord3D normals[3] = {normal1, normal2, normal3};
+    double depths[3] = {p1.depth, p2.depth, p3.depth};
     Coord2D pointLeft, pointRight;
 
     scanLineComputer.Init();
@@ -127,6 +132,7 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
         Color colorLeft, colorRight;
         Coord3D positionLeft, positionRight;
         double distanceRightLeft;
+        double depthLeft = 0, depthRight = 0;
 
         pointLeft.y = pointRight.y = y;
         pointLeft.x = scanLineComputer.left.data[y];
@@ -144,11 +150,14 @@ void Buffer::DrawPhongTriangle(const Coord2D p1,
             normalLeft = normalLeft + (normals[i] * currentLeftWeight);
             positionRight = positionRight + (positions3D[i] * currentRightWeight);
             positionLeft = positionLeft + (positions3D[i] * currentLeftWeight);
+            depthRight += depths[i] * currentRightWeight;
+            depthLeft += depths[i] * currentLeftWeight;
         }
 
         for(int x = pointLeft.x; x <= pointRight.x; ++x){
             Coord2D currentPoint(x, y);
             double w1 = 1 - (pointLeft.Distance(currentPoint) / distanceRightLeft), w2 = 1 - w1;
+            currentPoint.depth = depthLeft * w1 + depthRight * w2;
 
             SetPoint(currentPoint,
                      (colorLeft * w1 + colorRight * w2) *
