@@ -42,7 +42,8 @@ void Renderer::DrawFilaireCache() {
     for(int face = 0; face < effectiveDrawable->sortedVisibleFaces.size; ++face){
 
         // On rcupère l'index de la face
-        currentFace = &drawable->faces.data[effectiveDrawable->sortedVisibleFaces.data[face].index];
+        int index = effectiveDrawable->sortedVisibleFaces.data[face].index;
+        currentFace = &drawable->faces.data[index];
 
         // On effectue la même chose que pour la méthode précédente
         unsigned int indexFace[3] = {currentFace->index1,
@@ -60,8 +61,8 @@ void Renderer::DrawFilaireCache() {
                 buffer->DrawLine(
                              renderable.points2D.data[indexFace[point]],
                              renderable.points2D.data[indexFace[(point + 1) % 3]],
-                             drawable->faceColors.data[face],
-                             drawable->faceColors.data[face]);
+                             drawable->faceColors.data[index],
+                             drawable->faceColors.data[index]);
             }
         }
     }
